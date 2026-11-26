@@ -1,0 +1,84 @@
+# Lang-SVG configuration for natural images (ADE20K-Part, COCO experiments in the paper).
+
+point_budget: 2304          # total number of path points (paper: 576 / 1152 / 2304)
+path_budget: null           # reference path count; default point_budget // 9 (64 / 128 / 256)
+init_budget_ratio: 0.8      # share of the budget used by the initial tree
+seed: 0                     # set to null for non-deterministic runs
+
+weights_dir: weights        # see scripts/download_weights.sh
+checkpoints:
+  sam: sam_vit_h_4b8939.pth
+  semantic_sam: swinl_only_sam_many2many.pth
+  groundingdino: groundingdino_swint_ogc.pth
+  ram: ram_swin_large_14m.pth
+
+priors:
+  dataset_gt:               # true: GT object / part masks (COCO-style part dataset) replace Grounded-SAM;
+    enabled: false          # labeled GT masks are never pruned, merged or dropped (see langsvg/dataset_gt.py)
+    instance_json: null     # e.g. ADE20KPart234/ade20k_instance_val.json (objects with part_category_id lists)
+    joint_json: null        # part category names; default: instance_json with _instance_ -> _joint_
+    part_dir: null          # part label PNGs; default: <json dir>/annotations_detectron2_part/<image dir name>/
+  grounded_sam:             # open-vocabulary objects (RAM tags -> GroundingDINO -> SAM)
+    enabled: true
+    box_threshold: 0.25
+    text_threshold: 0.2
+    iou_threshold: 0.5
+  semantic_sam:             # multi-granularity masks
+    levels: [2, 3]
+  sam:                      # fine unlabeled masks (SamAutomaticMaskGenerator)
+    model_type: vit_h
+    points_per_side: 48
+    pred_iou_thresh: 0.86
+    stability_score_thresh: 0.85
+    crop_n_layers: 1
+    crop_n_points_downscale_factor: 2
+    min_mask_region_area: 100
+    box_nms_thresh: 0.7
+
+tree:
+  occlusion_threshold: 0.9  # re-parent unknown nodes hidden >= 90% by later nodes
+
+path:                       # mask -> polygon -> Bezier path, depth-adaptive simplification
+  control_points_per_segment: 1
+  epsilon: 6                # approxPolyDP tolerance at reference_path_count paths
+  epsilon_step_per_path_halving: 2
+  reference_path_count: 256
+  max_polygon_edges: 10
+  max_polygon_edges_step_per_path_halving: -2
+  min_max_polygon_edges: 3
+  depth_simplification:
+    enabled: true
+    fallback_layers: [2, 3, 4, 5, 6]   # tree depths that use the larger tolerance
+  fallback_epsilon_delta: 4
+
+optimization:
+  kmeans_k: 80
+  struct_iters: 100
+  visual_iters: 150
+  old_point_lr_scale: 0.03  # initial-tree points during direct refinement
+  old_color_lr_scale: 1.0
+  lr: {point: 1.5, color: 0.015}
+
+opacity_loss: {enabled: true, weight: 0.01, target: 1.0, trainable_only: true}
+
+refinement:
+  iterations: 7
+  direct_iterations: 5      # first 2 iterations: L1-SAM-Prompting, last 5: direct L1 masks
+  prompt_phase_budget_ratio: 0.8
+  nonfinal_ratio: 0.6
+  max_new_paths_divisor: 6
+  l1_semantic_sam_level: 6
+  max_color_change: 60
+  invisible_threshold: 7.0
+
+tree_prune:                 # tree-guided pruning (child vs. parent color)
+  enabled: true
+  color_threshold: 0.05
+  reference_path_count: 256
+  threshold_scale_per_path_halving: 1.5
+  min_layer_init_index: 2
+
+local_merge:                # tree-guided merging of similar same-branch siblings
+  enabled: true
+  color_threshold: 0.15
+  overlap_pixels_threshold: 3

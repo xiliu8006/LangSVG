@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.egg-info/
+weights/
+outputs/
+.cache/
+tmp/

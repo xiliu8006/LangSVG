@@ -1,0 +1,21 @@
+# PyTorch (install the CUDA build matching your driver first, see README)
+torch>=2.0
+torchvision>=0.15
+# diffvg (differentiable rasterizer) is built from source, see README.
+
+numpy<2
+opencv-python
+pillow
+pyyaml
+scipy
+scikit-image
+tqdm
+pycocotools
+# segmentation priors (Semantic-SAM, GroundingDINO, RAM are vendored in langsvg/third_party)
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
+timm==0.4.12
+transformers>=4.30,<4.47   # vectorization (GroundingDINO / RAM BERT, Semantic-SAM CLIP tokenizer)
+addict
+yapf
+# evaluation
+lpips

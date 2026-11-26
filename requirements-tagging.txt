@@ -1,0 +1,7 @@
+# Qwen3.5 tagging runs in its own environment: Qwen3.5 needs transformers >= 5.2 (tested with 5.6.2),
+# which is incompatible with the vectorization environment (transformers < 4.47).
+torch>=2.4
+transformers>=5.2
+accelerate
+pillow
+numpy

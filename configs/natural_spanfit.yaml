@@ -1,0 +1,19 @@
+# natural.yaml with span-fit initialization (langsvg/curve_fit.py).
+# Initial tree: cubic segments, each spanning 3 polygon edges (start v_i, end v_{i+3}; the last segment closes
+# at v_0 and may span fewer edges); the 2 inner control points are least-squares fitted to the mask contour
+# between the endpoints, ~1 path point per polygon vertex.
+# Visual refinement: quadratic span fit (one segment spans 2 polygon edges, 1 fitted control point).
+# Anchors (langsvg/anchor_span_fit.py): the vertices of a second polygon with approxPolyDP tolerance
+# span_fit_anchor_epsilon are always segment start/end points (a segment never runs over one), e.g. the
+# four corners of the full-image background; the span rule applies between anchors.
+base: natural.yaml
+
+path:
+  epsilon: 3                             # approxPolyDP tolerance (at 2304 points the effective epsilon)
+  max_polygon_edges: 20                  # natural uses 10; span fit puts ~1 point per vertex, so 20 edges ~ the
+                                         # point count natural reaches with 10 edges (cubic: 7 segments, 21 points)
+  control_points_per_segment: 2          # initial tree: cubic
+  refine_control_points_per_segment: 1   # visual-refinement paths: quadratic
+  span_fit: true
+  span_fit_samples: 64                   # contour samples per segment (arc-length resampled)
+  span_fit_anchor_epsilon: 30            # coarse polygon tolerance whose vertices are always segment endpoints

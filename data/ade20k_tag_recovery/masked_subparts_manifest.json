@@ -1,0 +1,8412 @@
+{
+ "benchmark": "ADE20KPart234 hidden-tag recovery (Lang-SVG)",
+ "note": "Fixed set of masked part/subpart nodes. Sample order is the evaluation order. node_id / scene_dir refer to the paper's scene graphs (final_render_with_tags.json). gt_annotation_id is the same GT part in langsvg.dataset_gt (<object annotation id>:part<part category id>), used to find the node in tree.json outputs of scripts/vectorize.py --dataset-gt.",
+ "seed": 20260429,
+ "samples_per_image": 5,
+ "max_mask_fraction": 0.5,
+ "min_area": 64,
+ "target_levels": [
+  "part",
+  "subpart"
+ ],
+ "selected_sample_keys": [
+  "ADE_val_00001961:svg_111",
+  "ADE_val_00001943:svg_143",
+  "ADE_val_00001846:svg_114",
+  "ADE_val_00000026:svg_134",
+  "ADE_val_00001826:svg_99",
+  "ADE_val_00001198:svg_88",
+  "ADE_val_00000310:svg_79",
+  "ADE_val_00000843:svg_80",
+  "ADE_val_00000483:svg_67",
+  "ADE_val_00000010:svg_80",
+  "ADE_val_00000515:svg_96",
+  "ADE_val_00001457:svg_53",
+  "ADE_val_00000972:svg_92",
+  "ADE_val_00001812:svg_58",
+  "ADE_val_00000482:svg_78",
+  "ADE_val_00001048:svg_55",
+  "ADE_val_00000972:svg_93",
+  "ADE_val_00000656:svg_122",
+  "ADE_val_00000656:svg_123",
+  "ADE_val_00001699:svg_79",
+  "ADE_val_00001527:svg_43",
+  "ADE_val_00000855:svg_58",
+  "ADE_val_00000079:svg_71",
+  "ADE_val_00000943:svg_20",
+  "ADE_val_00001590:svg_163",
+  "ADE_val_00001378:svg_92",
+  "ADE_val_00000854:svg_106",
+  "ADE_val_00001508:svg_73",
+  "ADE_val_00001818:svg_119",
+  "ADE_val_00000166:svg_55",
+  "ADE_val_00001495:svg_64",
+  "ADE_val_00000122:svg_44",
+  "ADE_val_00000084:svg_75",
+  "ADE_val_00001026:svg_128",
+  "ADE_val_00000843:svg_82",
+  "ADE_val_00001812:svg_64",
+  "ADE_val_00001154:svg_63",
+  "ADE_val_00001869:svg_59",
+  "ADE_val_00000482:svg_76",
+  "ADE_val_00001825:svg_136",
+  "ADE_val_00000786:svg_103",
+  "ADE_val_00000291:svg_110",
+  "ADE_val_00001962:svg_91",
+  "ADE_val_00000797:svg_119",
+  "ADE_val_00000470:svg_65",
+  "ADE_val_00001546:svg_20",
+  "ADE_val_00000291:svg_113",
+  "ADE_val_00001168:svg_91",
+  "ADE_val_00000163:svg_64",
+  "ADE_val_00001378:svg_91",
+  "ADE_val_00001026:svg_123",
+  "ADE_val_00001590:svg_161",
+  "ADE_val_00001332:svg_131",
+  "ADE_val_00001844:svg_65",
+  "ADE_val_00000815:svg_71",
+  "ADE_val_00001792:svg_52",
+  "ADE_val_00001378:svg_100",
+  "ADE_val_00000966:svg_79",
+  "ADE_val_00000821:svg_105",
+  "ADE_val_00001716:svg_90",
+  "ADE_val_00000481:svg_73",
+  "ADE_val_00001160:svg_64",
+  "ADE_val_00000166:svg_151",
+  "ADE_val_00001495:svg_67",
+  "ADE_val_00001847:svg_88",
+  "ADE_val_00000786:svg_204",
+  "ADE_val_00001005:svg_79",
+  "ADE_val_00001460:svg_106",
+  "ADE_val_00000230:svg_97",
+  "ADE_val_00001961:svg_115",
+  "ADE_val_00001831:svg_66",
+  "ADE_val_00000723:svg_64",
+  "ADE_val_00001495:svg_65",
+  "ADE_val_00001332:svg_130",
+  "ADE_val_00001743:svg_85",
+  "ADE_val_00001807:svg_96",
+  "ADE_val_00001844:svg_63",
+  "ADE_val_00000230:svg_94",
+  "ADE_val_00001962:svg_94",
+  "ADE_val_00001005:svg_80",
+  "ADE_val_00000962:svg_88",
+  "ADE_val_00001517:svg_77",
+  "ADE_val_00001987:svg_78",
+  "ADE_val_00001818:svg_115",
+  "ADE_val_00000965:svg_118",
+  "ADE_val_00001943:svg_142",
+  "ADE_val_00001546:svg_129",
+  "ADE_val_00001508:svg_80",
+  "ADE_val_00001716:svg_89",
+  "ADE_val_00000806:svg_67",
+  "ADE_val_00001908:svg_73",
+  "ADE_val_00001844:svg_67",
+  "ADE_val_00001847:svg_90",
+  "ADE_val_00001102:svg_49",
+  "ADE_val_00001508:svg_78",
+  "ADE_val_00000821:svg_122",
+  "ADE_val_00001743:svg_90",
+  "ADE_val_00001127:svg_72",
+  "ADE_val_00001716:svg_91",
+  "ADE_val_00001818:svg_122",
+  "ADE_val_00001517:svg_71",
+  "ADE_val_00000897:svg_54",
+  "ADE_val_00000003:svg_102",
+  "ADE_val_00001302:svg_57",
+  "ADE_val_00000166:svg_58",
+  "ADE_val_00001965:svg_82",
+  "ADE_val_00000972:svg_90",
+  "ADE_val_00001699:svg_92",
+  "ADE_val_00001512:svg_110",
+  "ADE_val_00001908:svg_75",
+  "ADE_val_00000779:svg_77",
+  "ADE_val_00001935:svg_54",
+  "ADE_val_00001168:svg_92",
+  "ADE_val_00000947:svg_83",
+  "ADE_val_00001099:svg_72",
+  "ADE_val_00000973:svg_90",
+  "ADE_val_00001375:svg_91",
+  "ADE_val_00000487:svg_61",
+  "ADE_val_00001646:svg_70",
+  "ADE_val_00000167:svg_107",
+  "ADE_val_00000649:svg_99",
+  "ADE_val_00001804:svg_112",
+  "ADE_val_00000228:svg_62",
+  "ADE_val_00001716:svg_83",
+  "ADE_val_00000854:svg_102",
+  "ADE_val_00001928:svg_66",
+  "ADE_val_00001579:svg_88",
+  "ADE_val_00001846:svg_118",
+  "ADE_val_00000316:svg_64",
+  "ADE_val_00001495:svg_66",
+  "ADE_val_00000372:svg_46",
+  "ADE_val_00001225:svg_69",
+  "ADE_val_00000291:svg_115",
+  "ADE_val_00001378:svg_96",
+  "ADE_val_00001177:svg_69",
+  "ADE_val_00001168:svg_94",
+  "ADE_val_00001869:svg_61",
+  "ADE_val_00000125:svg_88",
+  "ADE_val_00001546:svg_128",
+  "ADE_val_00001527:svg_39",
+  "ADE_val_00000337:svg_58",
+  "ADE_val_00000972:svg_103",
+  "ADE_val_00001546:svg_135",
+  "ADE_val_00001792:svg_55",
+  "ADE_val_00000897:svg_52",
+  "ADE_val_00000381:svg_57",
+  "ADE_val_00001743:svg_80",
+  "ADE_val_00001385:svg_49",
+  "ADE_val_00001875:svg_57",
+  "ADE_val_00001785:svg_100",
+  "ADE_val_00001446:svg_56",
+  "ADE_val_00001072:svg_140",
+  "ADE_val_00000806:svg_68",
+  "ADE_val_00000962:svg_91",
+  "ADE_val_00000843:svg_84",
+  "ADE_val_00000147:svg_56",
+  "ADE_val_00000128:svg_45",
+  "ADE_val_00001928:svg_61",
+  "ADE_val_00001547:svg_80",
+  "ADE_val_00000373:svg_80",
+  "ADE_val_00001812:svg_60",
+  "ADE_val_00001816:svg_62",
+  "ADE_val_00000515:svg_99",
+  "ADE_val_00000966:svg_78",
+  "ADE_val_00001579:svg_68",
+  "ADE_val_00001504:svg_58",
+  "ADE_val_00000728:svg_93",
+  "ADE_val_00000310:svg_80",
+  "ADE_val_00000466:svg_24",
+  "ADE_val_00000648:svg_8",
+  "ADE_val_00000648:svg_75",
+  "ADE_val_00001026:svg_130",
+  "ADE_val_00000962:svg_94",
+  "ADE_val_00000821:svg_123",
+  "ADE_val_00001792:svg_53",
+  "ADE_val_00000969:svg_85",
+  "ADE_val_00000118:svg_70",
+  "ADE_val_00000122:svg_42",
+  "ADE_val_00000166:svg_59",
+  "ADE_val_00001961:svg_113",
+  "ADE_val_00000846:svg_43",
+  "ADE_val_00001839:svg_105",
+  "ADE_val_00000723:svg_60",
+  "ADE_val_00001302:svg_54",
+  "ADE_val_00001908:svg_70",
+  "ADE_val_00000291:svg_107",
+  "ADE_val_00001097:svg_56",
+  "ADE_val_00001590:svg_160",
+  "ADE_val_00000911:svg_103",
+  "ADE_val_00000600:svg_79",
+  "ADE_val_00001839:svg_107",
+  "ADE_val_00000483:svg_65",
+  "ADE_val_00001517:svg_70",
+  "ADE_val_00000481:svg_77",
+  "ADE_val_00001869:svg_56",
+  "ADE_val_00001928:svg_64",
+  "ADE_val_00000846:svg_50",
+  "ADE_val_00000470:svg_62",
+  "ADE_val_00000530:svg_95",
+  "ADE_val_00001517:svg_12",
+  "ADE_val_00001869:svg_65",
+  "ADE_val_00000965:svg_116",
+  "ADE_val_00001804:svg_107",
+  "ADE_val_00000966:svg_86",
+  "ADE_val_00000815:svg_63",
+  "ADE_val_00001908:svg_69",
+  "ADE_val_00000515:svg_95",
+  "ADE_val_00000444:svg_92",
+  "ADE_val_00001521:svg_73",
+  "ADE_val_00001508:svg_81",
+  "ADE_val_00000821:svg_113",
+  "ADE_val_00000854:svg_94",
+  "ADE_val_00000118:svg_69",
+  "ADE_val_00001527:svg_38",
+  "ADE_val_00000147:svg_59",
+  "ADE_val_00000277:svg_95",
+  "ADE_val_00000653:svg_99",
+  "ADE_val_00001332:svg_129",
+  "ADE_val_00001521:svg_71",
+  "ADE_val_00001908:svg_80",
+  "ADE_val_00001504:svg_52",
+  "ADE_val_00001792:svg_59",
+  "ADE_val_00001590:svg_158",
+  "ADE_val_00000515:svg_102",
+  "ADE_val_00001909:svg_66",
+  "ADE_val_00000815:svg_68",
+  "ADE_val_00000482:svg_75",
+  "ADE_val_00000147:svg_63",
+  "ADE_val_00001512:svg_111",
+  "ADE_val_00000969:svg_84",
+  "ADE_val_00000128:svg_9",
+  "ADE_val_00001935:svg_61",
+  "ADE_val_00000846:svg_48",
+  "ADE_val_00000481:svg_74",
+  "ADE_val_00001460:svg_108",
+  "ADE_val_00000092:svg_68",
+  "ADE_val_00001699:svg_97",
+  "ADE_val_00001807:svg_95",
+  "ADE_val_00001987:svg_81",
+  "ADE_val_00000736:svg_97",
+  "ADE_val_00001385:svg_51",
+  "ADE_val_00000466:svg_25",
+  "ADE_val_00001302:svg_55",
+  "ADE_val_00000483:svg_64",
+  "ADE_val_00000373:svg_83",
+  "ADE_val_00000147:svg_55",
+  "ADE_val_00000095:svg_64",
+  "ADE_val_00000911:svg_102",
+  "ADE_val_00001517:svg_16",
+  "ADE_val_00001909:svg_68",
+  "ADE_val_00000466:svg_86",
+  "ADE_val_00000786:svg_101",
+  "ADE_val_00001712:svg_70",
+  "ADE_val_00001869:svg_60",
+  "ADE_val_00001127:svg_74",
+  "ADE_val_00000487:svg_63",
+  "ADE_val_00001486:svg_50",
+  "ADE_val_00001804:svg_111",
+  "ADE_val_00001198:svg_89",
+  "ADE_val_00000125:svg_91",
+  "ADE_val_00001579:svg_77",
+  "ADE_val_00001846:svg_122",
+  "ADE_val_00000636:svg_108",
+  "ADE_val_00001939:svg_11",
+  "ADE_val_00001965:svg_83",
+  "ADE_val_00001512:svg_116",
+  "ADE_val_00000026:svg_137",
+  "ADE_val_00001590:svg_156",
+  "ADE_val_00000230:svg_91",
+  "ADE_val_00000109:svg_81",
+  "ADE_val_00000003:svg_101",
+  "ADE_val_00001807:svg_206",
+  "ADE_val_00000713:svg_83",
+  "ADE_val_00000694:svg_75",
+  "ADE_val_00000786:svg_107",
+  "ADE_val_00000815:svg_70",
+  "ADE_val_00001898:svg_38",
+  "ADE_val_00001495:svg_58",
+  "ADE_val_00000969:svg_88",
+  "ADE_val_00001457:svg_44",
+  "ADE_val_00000230:svg_92",
+  "ADE_val_00000310:svg_81",
+  "ADE_val_00000481:svg_12",
+  "ADE_val_00001839:svg_109",
+  "ADE_val_00000118:svg_76",
+  "ADE_val_00000846:svg_46",
+  "ADE_val_00000728:svg_96",
+  "ADE_val_00000466:svg_87",
+  "ADE_val_00000969:svg_89",
+  "ADE_val_00001579:svg_91",
+  "ADE_val_00000481:svg_80",
+  "ADE_val_00001825:svg_140",
+  "ADE_val_00000051:svg_83",
+  "ADE_val_00001715:svg_91",
+  "ADE_val_00001301:svg_91",
+  "ADE_val_00000466:svg_88",
+  "ADE_val_00001812:svg_63",
+  "ADE_val_00000723:svg_61",
+  "ADE_val_00000966:svg_85",
+  "ADE_val_00001715:svg_92",
+  "ADE_val_00000969:svg_90",
+  "ADE_val_00001935:svg_57",
+  "ADE_val_00001939:svg_56",
+  "ADE_val_00000373:svg_82",
+  "ADE_val_00000372:svg_49",
+  "ADE_val_00000095:svg_67",
+  "ADE_val_00001359:svg_76",
+  "ADE_val_00000962:svg_97",
+  "ADE_val_00001867:svg_89",
+  "ADE_val_00000846:svg_44",
+  "ADE_val_00001831:svg_69",
+  "ADE_val_00001512:svg_121",
+  "ADE_val_00000291:svg_111",
+  "ADE_val_00001743:svg_89",
+  "ADE_val_00000806:svg_72",
+  "ADE_val_00000972:svg_102",
+  "ADE_val_00000355:svg_72",
+  "ADE_val_00000855:svg_67",
+  "ADE_val_00000118:svg_78",
+  "ADE_val_00000681:svg_77",
+  "ADE_val_00001457:svg_48",
+  "ADE_val_00001785:svg_96",
+  "ADE_val_00001646:svg_67",
+  "ADE_val_00001072:svg_143",
+  "ADE_val_00001909:svg_73",
+  "ADE_val_00001860:svg_89",
+  "ADE_val_00001965:svg_81",
+  "ADE_val_00001332:svg_135",
+  "ADE_val_00000821:svg_116",
+  "ADE_val_00000118:svg_68",
+  "ADE_val_00000943:svg_98",
+  "ADE_val_00000736:svg_98",
+  "ADE_val_00001457:svg_47",
+  "ADE_val_00001154:svg_62",
+  "ADE_val_00001457:svg_46",
+  "ADE_val_00000444:svg_96",
+  "ADE_val_00001434:svg_29",
+  "ADE_val_00001699:svg_88",
+  "ADE_val_00001743:svg_79",
+  "ADE_val_00000965:svg_110",
+  "ADE_val_00001076:svg_62",
+  "ADE_val_00000855:svg_64",
+  "ADE_val_00000965:svg_108",
+  "ADE_val_00000165:svg_77",
+  "ADE_val_00001246:svg_7",
+  "ADE_val_00000104:svg_59",
+  "ADE_val_00000854:svg_96",
+  "ADE_val_00000278:svg_36",
+  "ADE_val_00001965:svg_76",
+  "ADE_val_00000843:svg_87",
+  "ADE_val_00001909:svg_77",
+  "ADE_val_00000278:svg_105",
+  "ADE_val_00001818:svg_116",
+  "ADE_val_00001825:svg_124",
+  "ADE_val_00001512:svg_118",
+  "ADE_val_00001504:svg_51",
+  "ADE_val_00001839:svg_108",
+  "ADE_val_00000911:svg_107",
+  "ADE_val_00001825:svg_137",
+  "ADE_val_00000147:svg_66",
+  "ADE_val_00000278:svg_101",
+  "ADE_val_00001168:svg_87",
+  "ADE_val_00000867:svg_70",
+  "ADE_val_00000855:svg_61",
+  "ADE_val_00000636:svg_110",
+  "ADE_val_00000636:svg_17",
+  "ADE_val_00001943:svg_138",
+  "ADE_val_00000372:svg_48",
+  "ADE_val_00001965:svg_73",
+  "ADE_val_00000723:svg_68",
+  "ADE_val_00001825:svg_133",
+  "ADE_val_00001579:svg_86",
+  "ADE_val_00001378:svg_94",
+  "ADE_val_00000278:svg_97",
+  "ADE_val_00001716:svg_92",
+  "ADE_val_00001546:svg_140",
+  "ADE_val_00000310:svg_86",
+  "ADE_val_00001031:svg_105",
+  "ADE_val_00000348:svg_131",
+  "ADE_val_00000515:svg_105",
+  "ADE_val_00000337:svg_54",
+  "ADE_val_00001699:svg_72",
+  "ADE_val_00001943:svg_141",
+  "ADE_val_00000026:svg_140",
+  "ADE_val_00001822:svg_107",
+  "ADE_val_00001302:svg_60",
+  "ADE_val_00000962:svg_116",
+  "ADE_val_00000444:svg_93",
+  "ADE_val_00001160:svg_61",
+  "ADE_val_00000226:svg_154",
+  "ADE_val_00000348:svg_21",
+  "ADE_val_00001146:svg_32",
+  "ADE_val_00001729:svg_24",
+  "ADE_val_00000337:svg_59",
+  "ADE_val_00001712:svg_67",
+  "ADE_val_00001785:svg_97",
+  "ADE_val_00001521:svg_72",
+  "ADE_val_00000348:svg_132",
+  "ADE_val_00000337:svg_56",
+  "ADE_val_00000487:svg_60",
+  "ADE_val_00001271:svg_106",
+  "ADE_val_00001785:svg_101",
+  "ADE_val_00000723:svg_63",
+  "ADE_val_00001909:svg_70",
+  "ADE_val_00000163:svg_63",
+  "ADE_val_00001154:svg_60",
+  "ADE_val_00000026:svg_142",
+  "ADE_val_00001962:svg_89",
+  "ADE_val_00000092:svg_67",
+  "ADE_val_00001031:svg_106",
+  "ADE_val_00000947:svg_82",
+  "ADE_val_00001026:svg_126",
+  "ADE_val_00001943:svg_136",
+  "ADE_val_00000348:svg_135",
+  "ADE_val_00000063:svg_143",
+  "ADE_val_00001508:svg_83",
+  "ADE_val_00001160:svg_63",
+  "ADE_val_00000125:svg_89",
+  "ADE_val_00001375:svg_93",
+  "ADE_val_00000854:svg_103",
+  "ADE_val_00000188:svg_140",
+  "ADE_val_00000786:svg_105",
+  "ADE_val_00000278:svg_98",
+  "ADE_val_00001935:svg_56",
+  "ADE_val_00000348:svg_122",
+  "ADE_val_00001822:svg_109",
+  "ADE_val_00000855:svg_56",
+  "ADE_val_00001846:svg_117",
+  "ADE_val_00000815:svg_62",
+  "ADE_val_00000965:svg_106",
+  "ADE_val_00001504:svg_53"
+ ],
+ "masked_subparts_by_image": [
+  {
+   "image_id": "ADE_val_00000003",
+   "scene_dir": "ADE_val_00000003_ADE_val_00000003",
+   "image_file": "ADE_val_00000003.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000003:svg_101",
+     "node_id": "svg_101",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      28,
+      140,
+      52,
+      154
+     ],
+     "visible_bbox_area": 336,
+     "gt_annotation_id": "2:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000003:svg_102",
+     "node_id": "svg_102",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      43,
+      162,
+      67,
+      173
+     ],
+     "visible_bbox_area": 264,
+     "gt_annotation_id": "2:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000010",
+   "scene_dir": "ADE_val_00000010_ADE_val_00000010",
+   "image_file": "ADE_val_00000010.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000010:svg_80",
+     "node_id": "svg_80",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      437,
+      290,
+      446,
+      313
+     ],
+     "visible_bbox_area": 207,
+     "gt_annotation_id": "9:part0"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000026",
+   "scene_dir": "ADE_val_00000026_ADE_val_00000026",
+   "image_file": "ADE_val_00000026.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000026:svg_134",
+     "node_id": "svg_134",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      377,
+      246,
+      429,
+      333
+     ],
+     "visible_bbox_area": 4524,
+     "gt_annotation_id": "33:part6"
+    },
+    {
+     "sample_key": "ADE_val_00000026:svg_137",
+     "node_id": "svg_137",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      412,
+      167,
+      429,
+      185
+     ],
+     "visible_bbox_area": 306,
+     "gt_annotation_id": "32:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000026:svg_140",
+     "node_id": "svg_140",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      137,
+      250,
+      152,
+      264
+     ],
+     "visible_bbox_area": 210,
+     "gt_annotation_id": "35:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000026:svg_142",
+     "node_id": "svg_142",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      202,
+      237,
+      217,
+      249
+     ],
+     "visible_bbox_area": 180,
+     "gt_annotation_id": "34:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000051",
+   "scene_dir": "ADE_val_00000051_ADE_val_00000051",
+   "image_file": "ADE_val_00000051.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000051:svg_83",
+     "node_id": "svg_83",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      333,
+      233,
+      516,
+      480
+     ],
+     "visible_bbox_area": 45201,
+     "gt_annotation_id": "79:part126"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000063",
+   "scene_dir": "ADE_val_00000063_ADE_val_00000063",
+   "image_file": "ADE_val_00000063.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000063:svg_143",
+     "node_id": "svg_143",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      217,
+      147,
+      260,
+      203
+     ],
+     "visible_bbox_area": 2408,
+     "gt_annotation_id": "113:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000077",
+   "scene_dir": "ADE_val_00000077_ADE_val_00000077",
+   "image_file": "ADE_val_00000077.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000079",
+   "scene_dir": "ADE_val_00000079_ADE_val_00000079",
+   "image_file": "ADE_val_00000079.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000079:svg_71",
+     "node_id": "svg_71",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      222,
+      343,
+      345,
+      512
+     ],
+     "visible_bbox_area": 20787,
+     "gt_annotation_id": "135:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000084",
+   "scene_dir": "ADE_val_00000084_ADE_val_00000084",
+   "image_file": "ADE_val_00000084.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000084:svg_75",
+     "node_id": "svg_75",
+     "label": "toilet's lid",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      161,
+      262,
+      195,
+      265
+     ],
+     "visible_bbox_area": 102,
+     "gt_annotation_id": "145:part17"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000092",
+   "scene_dir": "ADE_val_00000092_ADE_val_00000092",
+   "image_file": "ADE_val_00000092.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000092:svg_67",
+     "node_id": "svg_67",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      165,
+      390,
+      312,
+      506
+     ],
+     "visible_bbox_area": 17052,
+     "gt_annotation_id": "158:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000092:svg_68",
+     "node_id": "svg_68",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      268,
+      99,
+      306,
+      304
+     ],
+     "visible_bbox_area": 7790,
+     "gt_annotation_id": "157:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000095",
+   "scene_dir": "ADE_val_00000095_ADE_val_00000095",
+   "image_file": "ADE_val_00000095.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000095:svg_64",
+     "node_id": "svg_64",
+     "label": "toilet's lid",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      195,
+      193,
+      254,
+      265
+     ],
+     "visible_bbox_area": 4248,
+     "gt_annotation_id": "166:part17"
+    },
+    {
+     "sample_key": "ADE_val_00000095:svg_67",
+     "node_id": "svg_67",
+     "label": "sink's tap",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      80,
+      170,
+      91,
+      184
+     ],
+     "visible_bbox_area": 154,
+     "gt_annotation_id": "165:part28"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000104",
+   "scene_dir": "ADE_val_00000104_ADE_val_00000104",
+   "image_file": "ADE_val_00000104.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000104:svg_59",
+     "node_id": "svg_59",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      255,
+      557,
+      312,
+      722
+     ],
+     "visible_bbox_area": 9405,
+     "gt_annotation_id": "183:part19"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000109",
+   "scene_dir": "ADE_val_00000109_ADE_val_00000109",
+   "image_file": "ADE_val_00000109.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000109:svg_81",
+     "node_id": "svg_81",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      574,
+      171,
+      612,
+      214
+     ],
+     "visible_bbox_area": 1634,
+     "gt_annotation_id": "192:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000118",
+   "scene_dir": "ADE_val_00000118_ADE_val_00000118",
+   "image_file": "ADE_val_00000118.jpg",
+   "total_subpart_annotations": 10,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000118:svg_68",
+     "node_id": "svg_68",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      643,
+      151,
+      719,
+      368
+     ],
+     "visible_bbox_area": 16492,
+     "gt_annotation_id": "211:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000118:svg_69",
+     "node_id": "svg_69",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      508,
+      257,
+      645,
+      367
+     ],
+     "visible_bbox_area": 15070,
+     "gt_annotation_id": "211:part19"
+    },
+    {
+     "sample_key": "ADE_val_00000118:svg_70",
+     "node_id": "svg_70",
+     "label": "cabinet's skirt",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      507,
+      361,
+      720,
+      388
+     ],
+     "visible_bbox_area": 5751,
+     "gt_annotation_id": "211:part23"
+    },
+    {
+     "sample_key": "ADE_val_00000118:svg_76",
+     "node_id": "svg_76",
+     "label": "desk's drawer",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      150,
+      243,
+      159,
+      273
+     ],
+     "visible_bbox_area": 270,
+     "gt_annotation_id": "214:part115"
+    },
+    {
+     "sample_key": "ADE_val_00000118:svg_78",
+     "node_id": "svg_78",
+     "label": "desk's shelf",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      92,
+      196,
+      113,
+      201
+     ],
+     "visible_bbox_area": 105,
+     "gt_annotation_id": "214:part117"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000122",
+   "scene_dir": "ADE_val_00000122_ADE_val_00000122",
+   "image_file": "ADE_val_00000122.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000122:svg_42",
+     "node_id": "svg_42",
+     "label": "bed's footboard",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      45,
+      347,
+      299,
+      512
+     ],
+     "visible_bbox_area": 41910,
+     "gt_annotation_id": "229:part66"
+    },
+    {
+     "sample_key": "ADE_val_00000122:svg_44",
+     "node_id": "svg_44",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      326,
+      276,
+      342,
+      316
+     ],
+     "visible_bbox_area": 640,
+     "gt_annotation_id": "230:part72"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000125",
+   "scene_dir": "ADE_val_00000125_ADE_val_00000125",
+   "image_file": "ADE_val_00000125.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000125:svg_88",
+     "node_id": "svg_88",
+     "label": "armchair's seat",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      377,
+      304,
+      403,
+      316
+     ],
+     "visible_bbox_area": 312,
+     "gt_annotation_id": "234:part81"
+    },
+    {
+     "sample_key": "ADE_val_00000125:svg_89",
+     "node_id": "svg_89",
+     "label": "armchair's back",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      364,
+      287,
+      390,
+      305
+     ],
+     "visible_bbox_area": 468,
+     "gt_annotation_id": "234:part78"
+    },
+    {
+     "sample_key": "ADE_val_00000125:svg_91",
+     "node_id": "svg_91",
+     "label": "armchair's leg",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      303,
+      320,
+      310,
+      332
+     ],
+     "visible_bbox_area": 84,
+     "gt_annotation_id": "233:part80"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000128",
+   "scene_dir": "ADE_val_00000128_ADE_val_00000128",
+   "image_file": "ADE_val_00000128.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000128:svg_45",
+     "node_id": "svg_45",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      71,
+      427,
+      123,
+      511
+     ],
+     "visible_bbox_area": 4368,
+     "gt_annotation_id": "247:part48"
+    },
+    {
+     "sample_key": "ADE_val_00000128:svg_9",
+     "node_id": "svg_9",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      93,
+      447,
+      161,
+      472
+     ],
+     "visible_bbox_area": 1700,
+     "gt_annotation_id": "246:part72"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000147",
+   "scene_dir": "ADE_val_00000147_ADE_val_00000147",
+   "image_file": "ADE_val_00000147.jpg",
+   "total_subpart_annotations": 15,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000147:svg_55",
+     "node_id": "svg_55",
+     "label": "table's drawer",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      50,
+      318,
+      157,
+      398
+     ],
+     "visible_bbox_area": 8560,
+     "gt_annotation_id": "308:part71"
+    },
+    {
+     "sample_key": "ADE_val_00000147:svg_56",
+     "node_id": "svg_56",
+     "label": "chair's arm",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      652,
+      225,
+      748,
+      290
+     ],
+     "visible_bbox_area": 6240,
+     "gt_annotation_id": "309:part45"
+    },
+    {
+     "sample_key": "ADE_val_00000147:svg_59",
+     "node_id": "svg_59",
+     "label": "lamp's highlight",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      59,
+      203,
+      139,
+      278
+     ],
+     "visible_bbox_area": 6000,
+     "gt_annotation_id": "310:part35"
+    },
+    {
+     "sample_key": "ADE_val_00000147:svg_63",
+     "node_id": "svg_63",
+     "label": "lamp's base",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      53,
+      284,
+      88,
+      295
+     ],
+     "visible_bbox_area": 385,
+     "gt_annotation_id": "310:part31"
+    },
+    {
+     "sample_key": "ADE_val_00000147:svg_66",
+     "node_id": "svg_66",
+     "label": "lamp's arm",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      411,
+      165,
+      426,
+      232
+     ],
+     "visible_bbox_area": 1005,
+     "gt_annotation_id": "311:part30"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000148",
+   "scene_dir": "ADE_val_00000148_ADE_val_00000148",
+   "image_file": "ADE_val_00000148.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000155",
+   "scene_dir": "ADE_val_00000155_ADE_val_00000155",
+   "image_file": "ADE_val_00000155.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000163",
+   "scene_dir": "ADE_val_00000163_ADE_val_00000163",
+   "image_file": "ADE_val_00000163.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000163:svg_63",
+     "node_id": "svg_63",
+     "label": "armchair's back",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      378,
+      188,
+      439,
+      223
+     ],
+     "visible_bbox_area": 2135,
+     "gt_annotation_id": "357:part78"
+    },
+    {
+     "sample_key": "ADE_val_00000163:svg_64",
+     "node_id": "svg_64",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      435,
+      203,
+      476,
+      231
+     ],
+     "visible_bbox_area": 1148,
+     "gt_annotation_id": "357:part77"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000165",
+   "scene_dir": "ADE_val_00000165_ADE_val_00000165",
+   "image_file": "ADE_val_00000165.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000165:svg_77",
+     "node_id": "svg_77",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      253,
+      294,
+      263,
+      327
+     ],
+     "visible_bbox_area": 330,
+     "gt_annotation_id": "362:part33"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000166",
+   "scene_dir": "ADE_val_00000166_ADE_val_00000166",
+   "image_file": "ADE_val_00000166.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000166:svg_151",
+     "node_id": "svg_151",
+     "label": "lamp's light source",
+     "level": "part",
+     "parent_id": "svg_58",
+     "bbox_xyxy": [
+      335,
+      99,
+      373,
+      122
+     ],
+     "visible_bbox_area": 874,
+     "gt_annotation_id": "366:part36"
+    },
+    {
+     "sample_key": "ADE_val_00000166:svg_55",
+     "node_id": "svg_55",
+     "label": "bed's footboard",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      497,
+      135,
+      676,
+      510
+     ],
+     "visible_bbox_area": 67125,
+     "gt_annotation_id": "365:part66"
+    },
+    {
+     "sample_key": "ADE_val_00000166:svg_58",
+     "node_id": "svg_58",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      323,
+      91,
+      389,
+      136
+     ],
+     "visible_bbox_area": 2970,
+     "gt_annotation_id": "366:part37"
+    },
+    {
+     "sample_key": "ADE_val_00000166:svg_59",
+     "node_id": "svg_59",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      7,
+      245,
+      46,
+      324
+     ],
+     "visible_bbox_area": 3081,
+     "gt_annotation_id": "364:part33"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000167",
+   "scene_dir": "ADE_val_00000167_ADE_val_00000167",
+   "image_file": "ADE_val_00000167.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000167:svg_107",
+     "node_id": "svg_107",
+     "label": "table's drawer",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      189,
+      136,
+      215,
+      146
+     ],
+     "visible_bbox_area": 260,
+     "gt_annotation_id": "367:part71"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000174",
+   "scene_dir": "ADE_val_00000174_ADE_val_00000174",
+   "image_file": "ADE_val_00000174.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000179",
+   "scene_dir": "ADE_val_00000179_ADE_val_00000179",
+   "image_file": "ADE_val_00000179.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000188",
+   "scene_dir": "ADE_val_00000188_ADE_val_00000188",
+   "image_file": "ADE_val_00000188.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000188:svg_140",
+     "node_id": "svg_140",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      210,
+      61,
+      228,
+      94
+     ],
+     "visible_bbox_area": 594,
+     "gt_annotation_id": "424:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000211",
+   "scene_dir": "ADE_val_00000211_ADE_val_00000211",
+   "image_file": "ADE_val_00000211.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000226",
+   "scene_dir": "ADE_val_00000226_ADE_val_00000226",
+   "image_file": "ADE_val_00000226.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000226:svg_154",
+     "node_id": "svg_154",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      22,
+      292,
+      30,
+      301
+     ],
+     "visible_bbox_area": 72,
+     "gt_annotation_id": "449:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000228",
+   "scene_dir": "ADE_val_00000228_ADE_val_00000228",
+   "image_file": "ADE_val_00000228.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000228:svg_62",
+     "node_id": "svg_62",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      90,
+      152,
+      112,
+      165
+     ],
+     "visible_bbox_area": 286,
+     "gt_annotation_id": "452:part129"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000230",
+   "scene_dir": "ADE_val_00000230_ADE_val_00000230",
+   "image_file": "ADE_val_00000230.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000230:svg_91",
+     "node_id": "svg_91",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      26,
+      116,
+      64,
+      156
+     ],
+     "visible_bbox_area": 1520,
+     "gt_annotation_id": "470:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000230:svg_92",
+     "node_id": "svg_92",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      122,
+      128,
+      155,
+      162
+     ],
+     "visible_bbox_area": 1122,
+     "gt_annotation_id": "471:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000230:svg_94",
+     "node_id": "svg_94",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      150,
+      121,
+      171,
+      137
+     ],
+     "visible_bbox_area": 336,
+     "gt_annotation_id": "473:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000230:svg_97",
+     "node_id": "svg_97",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      288,
+      108,
+      306,
+      125
+     ],
+     "visible_bbox_area": 306,
+     "gt_annotation_id": "476:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000242",
+   "scene_dir": "ADE_val_00000242_ADE_val_00000242",
+   "image_file": "ADE_val_00000242.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000248",
+   "scene_dir": "ADE_val_00000248_ADE_val_00000248",
+   "image_file": "ADE_val_00000248.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000277",
+   "scene_dir": "ADE_val_00000277_ADE_val_00000277",
+   "image_file": "ADE_val_00000277.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000277:svg_95",
+     "node_id": "svg_95",
+     "label": "airplane's stabilizer",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      109,
+      50,
+      127,
+      66
+     ],
+     "visible_bbox_area": 288,
+     "gt_annotation_id": "569:part203"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000278",
+   "scene_dir": "ADE_val_00000278_ADE_val_00000278",
+   "image_file": "ADE_val_00000278.jpg",
+   "total_subpart_annotations": 16,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000278:svg_101",
+     "node_id": "svg_101",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_30",
+     "bbox_xyxy": [
+      54,
+      292,
+      70,
+      299
+     ],
+     "visible_bbox_area": 112,
+     "gt_annotation_id": "572:part129"
+    },
+    {
+     "sample_key": "ADE_val_00000278:svg_105",
+     "node_id": "svg_105",
+     "label": "car's mirror",
+     "level": "part",
+     "parent_id": "svg_28",
+     "bbox_xyxy": [
+      128,
+      311,
+      139,
+      317
+     ],
+     "visible_bbox_area": 66,
+     "gt_annotation_id": "570:part131"
+    },
+    {
+     "sample_key": "ADE_val_00000278:svg_36",
+     "node_id": "svg_36",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      478,
+      316,
+      493,
+      321
+     ],
+     "visible_bbox_area": 75,
+     "gt_annotation_id": "571:part127"
+    },
+    {
+     "sample_key": "ADE_val_00000278:svg_97",
+     "node_id": "svg_97",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_28",
+     "bbox_xyxy": [
+      170,
+      338,
+      195,
+      344
+     ],
+     "visible_bbox_area": 150,
+     "gt_annotation_id": "570:part129"
+    },
+    {
+     "sample_key": "ADE_val_00000278:svg_98",
+     "node_id": "svg_98",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_31",
+     "bbox_xyxy": [
+      606,
+      295,
+      617,
+      311
+     ],
+     "visible_bbox_area": 176,
+     "gt_annotation_id": "576:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000283",
+   "scene_dir": "ADE_val_00000283_ADE_val_00000283",
+   "image_file": "ADE_val_00000283.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000291",
+   "scene_dir": "ADE_val_00000291_ADE_val_00000291",
+   "image_file": "ADE_val_00000291.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000291:svg_107",
+     "node_id": "svg_107",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      379,
+      250,
+      413,
+      310
+     ],
+     "visible_bbox_area": 2040,
+     "gt_annotation_id": "600:part6"
+    },
+    {
+     "sample_key": "ADE_val_00000291:svg_110",
+     "node_id": "svg_110",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      595,
+      177,
+      647,
+      191
+     ],
+     "visible_bbox_area": 728,
+     "gt_annotation_id": "599:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000291:svg_111",
+     "node_id": "svg_111",
+     "label": "person's back",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      399,
+      181,
+      429,
+      241
+     ],
+     "visible_bbox_area": 1800,
+     "gt_annotation_id": "600:part1"
+    },
+    {
+     "sample_key": "ADE_val_00000291:svg_113",
+     "node_id": "svg_113",
+     "label": "person's foot",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      441,
+      291,
+      458,
+      314
+     ],
+     "visible_bbox_area": 391,
+     "gt_annotation_id": "600:part2"
+    },
+    {
+     "sample_key": "ADE_val_00000291:svg_115",
+     "node_id": "svg_115",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      604,
+      197,
+      628,
+      205
+     ],
+     "visible_bbox_area": 192,
+     "gt_annotation_id": "599:part129"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000310",
+   "scene_dir": "ADE_val_00000310_ADE_val_00000310",
+   "image_file": "ADE_val_00000310.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000310:svg_79",
+     "node_id": "svg_79",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      300,
+      341,
+      439,
+      484
+     ],
+     "visible_bbox_area": 19877,
+     "gt_annotation_id": "640:part72"
+    },
+    {
+     "sample_key": "ADE_val_00000310:svg_80",
+     "node_id": "svg_80",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      87,
+      209,
+      155,
+      314
+     ],
+     "visible_bbox_area": 7140,
+     "gt_annotation_id": "642:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000310:svg_81",
+     "node_id": "svg_81",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      485,
+      160,
+      523,
+      218
+     ],
+     "visible_bbox_area": 2204,
+     "gt_annotation_id": "644:part46"
+    },
+    {
+     "sample_key": "ADE_val_00000310:svg_86",
+     "node_id": "svg_86",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      397,
+      180,
+      424,
+      212
+     ],
+     "visible_bbox_area": 864,
+     "gt_annotation_id": "643:part77"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000316",
+   "scene_dir": "ADE_val_00000316_ADE_val_00000316",
+   "image_file": "ADE_val_00000316.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000316:svg_64",
+     "node_id": "svg_64",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      209,
+      279,
+      308,
+      374
+     ],
+     "visible_bbox_area": 9405,
+     "gt_annotation_id": "661:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000337",
+   "scene_dir": "ADE_val_00000337_ADE_val_00000337",
+   "image_file": "ADE_val_00000337.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000337:svg_54",
+     "node_id": "svg_54",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      0,
+      395,
+      113,
+      467
+     ],
+     "visible_bbox_area": 8136,
+     "gt_annotation_id": "695:part6"
+    },
+    {
+     "sample_key": "ADE_val_00000337:svg_56",
+     "node_id": "svg_56",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      77,
+      230,
+      126,
+      297
+     ],
+     "visible_bbox_area": 3283,
+     "gt_annotation_id": "695:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000337:svg_58",
+     "node_id": "svg_58",
+     "label": "person's foot",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      2,
+      461,
+      62,
+      499
+     ],
+     "visible_bbox_area": 2280,
+     "gt_annotation_id": "695:part2"
+    },
+    {
+     "sample_key": "ADE_val_00000337:svg_59",
+     "node_id": "svg_59",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      228,
+      100,
+      263,
+      141
+     ],
+     "visible_bbox_area": 1435,
+     "gt_annotation_id": "694:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000348",
+   "scene_dir": "ADE_val_00000348_ADE_val_00000348",
+   "image_file": "ADE_val_00000348.jpg",
+   "total_subpart_annotations": 19,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000348:svg_122",
+     "node_id": "svg_122",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      205,
+      171,
+      288,
+      264
+     ],
+     "visible_bbox_area": 7719,
+     "gt_annotation_id": "702:part8"
+    },
+    {
+     "sample_key": "ADE_val_00000348:svg_131",
+     "node_id": "svg_131",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      363,
+      186,
+      433,
+      248
+     ],
+     "visible_bbox_area": 4340,
+     "gt_annotation_id": "701:part0"
+    },
+    {
+     "sample_key": "ADE_val_00000348:svg_132",
+     "node_id": "svg_132",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      374,
+      126,
+      409,
+      179
+     ],
+     "visible_bbox_area": 1855,
+     "gt_annotation_id": "701:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000348:svg_135",
+     "node_id": "svg_135",
+     "label": "person's hand",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      181,
+      320,
+      206,
+      357
+     ],
+     "visible_bbox_area": 925,
+     "gt_annotation_id": "702:part4"
+    },
+    {
+     "sample_key": "ADE_val_00000348:svg_21",
+     "node_id": "svg_21",
+     "label": "person's hand",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      376,
+      245,
+      394,
+      258
+     ],
+     "visible_bbox_area": 234,
+     "gt_annotation_id": "703:part4"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000355",
+   "scene_dir": "ADE_val_00000355_ADE_val_00000355",
+   "image_file": "ADE_val_00000355.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000355:svg_72",
+     "node_id": "svg_72",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      96,
+      16,
+      160,
+      59
+     ],
+     "visible_bbox_area": 2752,
+     "gt_annotation_id": "705:part37"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000372",
+   "scene_dir": "ADE_val_00000372_ADE_val_00000372",
+   "image_file": "ADE_val_00000372.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000372:svg_46",
+     "node_id": "svg_46",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      380,
+      6,
+      508,
+      69
+     ],
+     "visible_bbox_area": 8064,
+     "gt_annotation_id": "710:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000372:svg_48",
+     "node_id": "svg_48",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      402,
+      433,
+      472,
+      512
+     ],
+     "visible_bbox_area": 5530,
+     "gt_annotation_id": "713:part19"
+    },
+    {
+     "sample_key": "ADE_val_00000372:svg_49",
+     "node_id": "svg_49",
+     "label": "microwave's button panel",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      433,
+      121,
+      488,
+      208
+     ],
+     "visible_bbox_area": 4785,
+     "gt_annotation_id": "712:part154"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000373",
+   "scene_dir": "ADE_val_00000373_ADE_val_00000373",
+   "image_file": "ADE_val_00000373.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000373:svg_80",
+     "node_id": "svg_80",
+     "label": "sofa's back",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      303,
+      279,
+      420,
+      320
+     ],
+     "visible_bbox_area": 4797,
+     "gt_annotation_id": "718:part103"
+    },
+    {
+     "sample_key": "ADE_val_00000373:svg_82",
+     "node_id": "svg_82",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      249,
+      255,
+      297,
+      301
+     ],
+     "visible_bbox_area": 2208,
+     "gt_annotation_id": "717:part102"
+    },
+    {
+     "sample_key": "ADE_val_00000373:svg_83",
+     "node_id": "svg_83",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      662,
+      257,
+      683,
+      290
+     ],
+     "visible_bbox_area": 693,
+     "gt_annotation_id": "719:part104"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000381",
+   "scene_dir": "ADE_val_00000381_ADE_val_00000381",
+   "image_file": "ADE_val_00000381.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000381:svg_57",
+     "node_id": "svg_57",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      105,
+      134,
+      130,
+      181
+     ],
+     "visible_bbox_area": 1175,
+     "gt_annotation_id": "727:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000395",
+   "scene_dir": "ADE_val_00000395_ADE_val_00000395",
+   "image_file": "ADE_val_00000395.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000398",
+   "scene_dir": "ADE_val_00000398_ADE_val_00000398",
+   "image_file": "ADE_val_00000398.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000427",
+   "scene_dir": "ADE_val_00000427_ADE_val_00000427",
+   "image_file": "ADE_val_00000427.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000444",
+   "scene_dir": "ADE_val_00000444_ADE_val_00000444",
+   "image_file": "ADE_val_00000444.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000444:svg_92",
+     "node_id": "svg_92",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      316,
+      111,
+      355,
+      155
+     ],
+     "visible_bbox_area": 1716,
+     "gt_annotation_id": "790:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000444:svg_93",
+     "node_id": "svg_93",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      22,
+      119,
+      50,
+      148
+     ],
+     "visible_bbox_area": 812,
+     "gt_annotation_id": "793:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000444:svg_96",
+     "node_id": "svg_96",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      156,
+      141,
+      185,
+      170
+     ],
+     "visible_bbox_area": 841,
+     "gt_annotation_id": "791:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000466",
+   "scene_dir": "ADE_val_00000466_ADE_val_00000466",
+   "image_file": "ADE_val_00000466.jpg",
+   "total_subpart_annotations": 13,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000466:svg_24",
+     "node_id": "svg_24",
+     "label": "light's light source",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      451,
+      119,
+      466,
+      126
+     ],
+     "visible_bbox_area": 105,
+     "gt_annotation_id": "900:part232"
+    },
+    {
+     "sample_key": "ADE_val_00000466:svg_25",
+     "node_id": "svg_25",
+     "label": "light's light source",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      347,
+      130,
+      363,
+      138
+     ],
+     "visible_bbox_area": 128,
+     "gt_annotation_id": "899:part232"
+    },
+    {
+     "sample_key": "ADE_val_00000466:svg_86",
+     "node_id": "svg_86",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      420,
+      307,
+      453,
+      422
+     ],
+     "visible_bbox_area": 3795,
+     "gt_annotation_id": "903:part26"
+    },
+    {
+     "sample_key": "ADE_val_00000466:svg_87",
+     "node_id": "svg_87",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      174,
+      310,
+      255,
+      340
+     ],
+     "visible_bbox_area": 2430,
+     "gt_annotation_id": "897:part19"
+    },
+    {
+     "sample_key": "ADE_val_00000466:svg_88",
+     "node_id": "svg_88",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      335,
+      307,
+      404,
+      329
+     ],
+     "visible_bbox_area": 1518,
+     "gt_annotation_id": "895:part19"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000470",
+   "scene_dir": "ADE_val_00000470_ADE_val_00000470",
+   "image_file": "ADE_val_00000470.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000470:svg_62",
+     "node_id": "svg_62",
+     "label": "cooking stove's stove",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      461,
+      268,
+      588,
+      293
+     ],
+     "visible_bbox_area": 3175,
+     "gt_annotation_id": "934:part153"
+    },
+    {
+     "sample_key": "ADE_val_00000470:svg_65",
+     "node_id": "svg_65",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      150,
+      232,
+      211,
+      276
+     ],
+     "visible_bbox_area": 2684,
+     "gt_annotation_id": "935:part26"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000479",
+   "scene_dir": "ADE_val_00000479_ADE_val_00000479",
+   "image_file": "ADE_val_00000479.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000481",
+   "scene_dir": "ADE_val_00000481_ADE_val_00000481",
+   "image_file": "ADE_val_00000481.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000481:svg_12",
+     "node_id": "svg_12",
+     "label": "chair's apron",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      267,
+      270,
+      292,
+      295
+     ],
+     "visible_bbox_area": 625,
+     "gt_annotation_id": "1019:part44"
+    },
+    {
+     "sample_key": "ADE_val_00000481:svg_73",
+     "node_id": "svg_73",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      26,
+      234,
+      153,
+      353
+     ],
+     "visible_bbox_area": 15113,
+     "gt_annotation_id": "1018:part46"
+    },
+    {
+     "sample_key": "ADE_val_00000481:svg_74",
+     "node_id": "svg_74",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      233,
+      279,
+      268,
+      479
+     ],
+     "visible_bbox_area": 7000,
+     "gt_annotation_id": "1017:part72"
+    },
+    {
+     "sample_key": "ADE_val_00000481:svg_77",
+     "node_id": "svg_77",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      142,
+      372,
+      162,
+      459
+     ],
+     "visible_bbox_area": 1740,
+     "gt_annotation_id": "1018:part48"
+    },
+    {
+     "sample_key": "ADE_val_00000481:svg_80",
+     "node_id": "svg_80",
+     "label": "cooking stove's drawer",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      636,
+      266,
+      661,
+      349
+     ],
+     "visible_bbox_area": 2075,
+     "gt_annotation_id": "1015:part151"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000482",
+   "scene_dir": "ADE_val_00000482_ADE_val_00000482",
+   "image_file": "ADE_val_00000482.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000482:svg_75",
+     "node_id": "svg_75",
+     "label": "chest of drawers's drawer",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      151,
+      188,
+      190,
+      237
+     ],
+     "visible_bbox_area": 1911,
+     "gt_annotation_id": "1021:part55"
+    },
+    {
+     "sample_key": "ADE_val_00000482:svg_76",
+     "node_id": "svg_76",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      0,
+      204,
+      25,
+      249
+     ],
+     "visible_bbox_area": 1125,
+     "gt_annotation_id": "1022:part19"
+    },
+    {
+     "sample_key": "ADE_val_00000482:svg_78",
+     "node_id": "svg_78",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      39,
+      137,
+      62,
+      149
+     ],
+     "visible_bbox_area": 276,
+     "gt_annotation_id": "1023:part26"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000483",
+   "scene_dir": "ADE_val_00000483_ADE_val_00000483",
+   "image_file": "ADE_val_00000483.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000483:svg_64",
+     "node_id": "svg_64",
+     "label": "cooking stove's stove",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      198,
+      153,
+      339,
+      205
+     ],
+     "visible_bbox_area": 7332,
+     "gt_annotation_id": "1031:part153"
+    },
+    {
+     "sample_key": "ADE_val_00000483:svg_65",
+     "node_id": "svg_65",
+     "label": "cooking stove's button panel",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      268,
+      112,
+      387,
+      153
+     ],
+     "visible_bbox_area": 4879,
+     "gt_annotation_id": "1031:part149"
+    },
+    {
+     "sample_key": "ADE_val_00000483:svg_67",
+     "node_id": "svg_67",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      141,
+      170,
+      173,
+      278
+     ],
+     "visible_bbox_area": 3456,
+     "gt_annotation_id": "1030:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000487",
+   "scene_dir": "ADE_val_00000487_ADE_val_00000487",
+   "image_file": "ADE_val_00000487.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000487:svg_60",
+     "node_id": "svg_60",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      240,
+      151,
+      425,
+      270
+     ],
+     "visible_bbox_area": 22015,
+     "gt_annotation_id": "1066:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000487:svg_61",
+     "node_id": "svg_61",
+     "label": "cooking stove's oven",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      138,
+      302,
+      234,
+      432
+     ],
+     "visible_bbox_area": 12480,
+     "gt_annotation_id": "1065:part152"
+    },
+    {
+     "sample_key": "ADE_val_00000487:svg_63",
+     "node_id": "svg_63",
+     "label": "washer's button panel",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      359,
+      275,
+      511,
+      327
+     ],
+     "visible_bbox_area": 7904,
+     "gt_annotation_id": "1064:part218"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000515",
+   "scene_dir": "ADE_val_00000515_ADE_val_00000515",
+   "image_file": "ADE_val_00000515.jpg",
+   "total_subpart_annotations": 13,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000515:svg_102",
+     "node_id": "svg_102",
+     "label": "coffee table's leg",
+     "level": "part",
+     "parent_id": "svg_21",
+     "bbox_xyxy": [
+      426,
+      396,
+      448,
+      442
+     ],
+     "visible_bbox_area": 1012,
+     "gt_annotation_id": "1134:part98"
+    },
+    {
+     "sample_key": "ADE_val_00000515:svg_105",
+     "node_id": "svg_105",
+     "label": "lamp's base",
+     "level": "part",
+     "parent_id": "svg_23",
+     "bbox_xyxy": [
+      247,
+      286,
+      268,
+      296
+     ],
+     "visible_bbox_area": 210,
+     "gt_annotation_id": "1135:part31"
+    },
+    {
+     "sample_key": "ADE_val_00000515:svg_95",
+     "node_id": "svg_95",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_20",
+     "bbox_xyxy": [
+      1,
+      369,
+      190,
+      512
+     ],
+     "visible_bbox_area": 27027,
+     "gt_annotation_id": "1131:part102"
+    },
+    {
+     "sample_key": "ADE_val_00000515:svg_96",
+     "node_id": "svg_96",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_20",
+     "bbox_xyxy": [
+      18,
+      275,
+      250,
+      371
+     ],
+     "visible_bbox_area": 22272,
+     "gt_annotation_id": "1131:part104"
+    },
+    {
+     "sample_key": "ADE_val_00000515:svg_99",
+     "node_id": "svg_99",
+     "label": "sofa's seat base",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      456,
+      335,
+      587,
+      512
+     ],
+     "visible_bbox_area": 23187,
+     "gt_annotation_id": "1130:part106"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000530",
+   "scene_dir": "ADE_val_00000530_ADE_val_00000530",
+   "image_file": "ADE_val_00000530.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000530:svg_95",
+     "node_id": "svg_95",
+     "label": "coffee table's leg",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      100,
+      414,
+      124,
+      512
+     ],
+     "visible_bbox_area": 2352,
+     "gt_annotation_id": "1207:part98"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000562",
+   "scene_dir": "ADE_val_00000562_ADE_val_00000562",
+   "image_file": "ADE_val_00000562.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000600",
+   "scene_dir": "ADE_val_00000600_ADE_val_00000600",
+   "image_file": "ADE_val_00000600.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000600:svg_79",
+     "node_id": "svg_79",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      188,
+      179,
+      223,
+      223
+     ],
+     "visible_bbox_area": 1540,
+     "gt_annotation_id": "1283:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000636",
+   "scene_dir": "ADE_val_00000636_ADE_val_00000636",
+   "image_file": "ADE_val_00000636.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000636:svg_108",
+     "node_id": "svg_108",
+     "label": "swivel chair's base",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      326,
+      429,
+      468,
+      495
+     ],
+     "visible_bbox_area": 9372,
+     "gt_annotation_id": "1301:part92"
+    },
+    {
+     "sample_key": "ADE_val_00000636:svg_110",
+     "node_id": "svg_110",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      641,
+      433,
+      660,
+      512
+     ],
+     "visible_bbox_area": 1501,
+     "gt_annotation_id": "1300:part72"
+    },
+    {
+     "sample_key": "ADE_val_00000636:svg_17",
+     "node_id": "svg_17",
+     "label": "computer's computer case",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      241,
+      262,
+      264,
+      315
+     ],
+     "visible_bbox_area": 1219,
+     "gt_annotation_id": "1303:part109"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000637",
+   "scene_dir": "ADE_val_00000637_ADE_val_00000637",
+   "image_file": "ADE_val_00000637.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000648",
+   "scene_dir": "ADE_val_00000648_ADE_val_00000648",
+   "image_file": "ADE_val_00000648.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000648:svg_75",
+     "node_id": "svg_75",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      155,
+      98,
+      177,
+      147
+     ],
+     "visible_bbox_area": 1078,
+     "gt_annotation_id": "1315:part19"
+    },
+    {
+     "sample_key": "ADE_val_00000648:svg_8",
+     "node_id": "svg_8",
+     "label": "computer's keyboard",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      90,
+      136,
+      107,
+      155
+     ],
+     "visible_bbox_area": 323,
+     "gt_annotation_id": "1316:part110"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000649",
+   "scene_dir": "ADE_val_00000649_ADE_val_00000649",
+   "image_file": "ADE_val_00000649.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000649:svg_99",
+     "node_id": "svg_99",
+     "label": "computer's keyboard",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      359,
+      259,
+      469,
+      287
+     ],
+     "visible_bbox_area": 3080,
+     "gt_annotation_id": "1319:part110"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000653",
+   "scene_dir": "ADE_val_00000653_ADE_val_00000653",
+   "image_file": "ADE_val_00000653.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000653:svg_99",
+     "node_id": "svg_99",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      794,
+      263,
+      812,
+      278
+     ],
+     "visible_bbox_area": 270,
+     "gt_annotation_id": "1321:part133"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000656",
+   "scene_dir": "ADE_val_00000656_ADE_val_00000656",
+   "image_file": "ADE_val_00000656.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000656:svg_122",
+     "node_id": "svg_122",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      155,
+      148,
+      171,
+      166
+     ],
+     "visible_bbox_area": 288,
+     "gt_annotation_id": "1327:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000656:svg_123",
+     "node_id": "svg_123",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      168,
+      136,
+      184,
+      160
+     ],
+     "visible_bbox_area": 384,
+     "gt_annotation_id": "1325:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000681",
+   "scene_dir": "ADE_val_00000681_ADE_val_00000681",
+   "image_file": "ADE_val_00000681.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000681:svg_77",
+     "node_id": "svg_77",
+     "label": "person's hand",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      189,
+      202,
+      238,
+      231
+     ],
+     "visible_bbox_area": 1421,
+     "gt_annotation_id": "1352:part4"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000694",
+   "scene_dir": "ADE_val_00000694_ADE_val_00000694",
+   "image_file": "ADE_val_00000694.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000694:svg_75",
+     "node_id": "svg_75",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      158,
+      174,
+      195,
+      214
+     ],
+     "visible_bbox_area": 1480,
+     "gt_annotation_id": "1363:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000713",
+   "scene_dir": "ADE_val_00000713_ADE_val_00000713",
+   "image_file": "ADE_val_00000713.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000713:svg_83",
+     "node_id": "svg_83",
+     "label": "pool table's pocket",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      316,
+      292,
+      393,
+      323
+     ],
+     "visible_bbox_area": 2387,
+     "gt_annotation_id": "1406:part188"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000723",
+   "scene_dir": "ADE_val_00000723_ADE_val_00000723",
+   "image_file": "ADE_val_00000723.jpg",
+   "total_subpart_annotations": 10,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000723:svg_60",
+     "node_id": "svg_60",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      189,
+      130,
+      204,
+      217
+     ],
+     "visible_bbox_area": 1305,
+     "gt_annotation_id": "1415:part72"
+    },
+    {
+     "sample_key": "ADE_val_00000723:svg_61",
+     "node_id": "svg_61",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      56,
+      79,
+      77,
+      117
+     ],
+     "visible_bbox_area": 798,
+     "gt_annotation_id": "1416:part46"
+    },
+    {
+     "sample_key": "ADE_val_00000723:svg_63",
+     "node_id": "svg_63",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      74,
+      103,
+      94,
+      118
+     ],
+     "visible_bbox_area": 300,
+     "gt_annotation_id": "1416:part49"
+    },
+    {
+     "sample_key": "ADE_val_00000723:svg_64",
+     "node_id": "svg_64",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      72,
+      112,
+      80,
+      142
+     ],
+     "visible_bbox_area": 240,
+     "gt_annotation_id": "1416:part48"
+    },
+    {
+     "sample_key": "ADE_val_00000723:svg_68",
+     "node_id": "svg_68",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      36,
+      94,
+      48,
+      104
+     ],
+     "visible_bbox_area": 120,
+     "gt_annotation_id": "1417:part49"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000728",
+   "scene_dir": "ADE_val_00000728_ADE_val_00000728",
+   "image_file": "ADE_val_00000728.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000728:svg_93",
+     "node_id": "svg_93",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      263,
+      100,
+      315,
+      153
+     ],
+     "visible_bbox_area": 2756,
+     "gt_annotation_id": "1425:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000728:svg_96",
+     "node_id": "svg_96",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      225,
+      76,
+      257,
+      115
+     ],
+     "visible_bbox_area": 1248,
+     "gt_annotation_id": "1423:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000736",
+   "scene_dir": "ADE_val_00000736_ADE_val_00000736",
+   "image_file": "ADE_val_00000736.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000736:svg_97",
+     "node_id": "svg_97",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      325,
+      178,
+      378,
+      272
+     ],
+     "visible_bbox_area": 4982,
+     "gt_annotation_id": "1426:part126"
+    },
+    {
+     "sample_key": "ADE_val_00000736:svg_98",
+     "node_id": "svg_98",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      299,
+      259,
+      340,
+      310
+     ],
+     "visible_bbox_area": 2091,
+     "gt_annotation_id": "1426:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000753",
+   "scene_dir": "ADE_val_00000753_ADE_val_00000753",
+   "image_file": "ADE_val_00000753.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000779",
+   "scene_dir": "ADE_val_00000779_ADE_val_00000779",
+   "image_file": "ADE_val_00000779.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000779:svg_77",
+     "node_id": "svg_77",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      551,
+      329,
+      571,
+      354
+     ],
+     "visible_bbox_area": 500,
+     "gt_annotation_id": "1460:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000782",
+   "scene_dir": "ADE_val_00000782_ADE_val_00000782",
+   "image_file": "ADE_val_00000782.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000786",
+   "scene_dir": "ADE_val_00000786_ADE_val_00000786",
+   "image_file": "ADE_val_00000786.jpg",
+   "total_subpart_annotations": 13,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000786:svg_101",
+     "node_id": "svg_101",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_25",
+     "bbox_xyxy": [
+      229,
+      322,
+      285,
+      339
+     ],
+     "visible_bbox_area": 952,
+     "gt_annotation_id": "1488:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000786:svg_103",
+     "node_id": "svg_103",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      360,
+      316,
+      393,
+      328
+     ],
+     "visible_bbox_area": 396,
+     "gt_annotation_id": "1489:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000786:svg_105",
+     "node_id": "svg_105",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_26",
+     "bbox_xyxy": [
+      530,
+      325,
+      549,
+      339
+     ],
+     "visible_bbox_area": 266,
+     "gt_annotation_id": "1490:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000786:svg_107",
+     "node_id": "svg_107",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_25",
+     "bbox_xyxy": [
+      246,
+      346,
+      268,
+      356
+     ],
+     "visible_bbox_area": 220,
+     "gt_annotation_id": "1488:part127"
+    },
+    {
+     "sample_key": "ADE_val_00000786:svg_204",
+     "node_id": "svg_204",
+     "label": "car's mirror",
+     "level": "part",
+     "parent_id": "svg_100",
+     "bbox_xyxy": [
+      285,
+      331,
+      299,
+      339
+     ],
+     "visible_bbox_area": 112,
+     "gt_annotation_id": "1488:part131"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000797",
+   "scene_dir": "ADE_val_00000797_ADE_val_00000797",
+   "image_file": "ADE_val_00000797.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000797:svg_119",
+     "node_id": "svg_119",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      493,
+      321,
+      527,
+      357
+     ],
+     "visible_bbox_area": 1224,
+     "gt_annotation_id": "1515:part126"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000805",
+   "scene_dir": "ADE_val_00000805_ADE_val_00000805",
+   "image_file": "ADE_val_00000805.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000806",
+   "scene_dir": "ADE_val_00000806_ADE_val_00000806",
+   "image_file": "ADE_val_00000806.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000806:svg_67",
+     "node_id": "svg_67",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      142,
+      388,
+      175,
+      450
+     ],
+     "visible_bbox_area": 2046,
+     "gt_annotation_id": "1541:part126"
+    },
+    {
+     "sample_key": "ADE_val_00000806:svg_68",
+     "node_id": "svg_68",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      164,
+      388,
+      208,
+      406
+     ],
+     "visible_bbox_area": 792,
+     "gt_annotation_id": "1540:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000806:svg_72",
+     "node_id": "svg_72",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      173,
+      407,
+      191,
+      418
+     ],
+     "visible_bbox_area": 198,
+     "gt_annotation_id": "1540:part129"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000815",
+   "scene_dir": "ADE_val_00000815_ADE_val_00000815",
+   "image_file": "ADE_val_00000815.jpg",
+   "total_subpart_annotations": 12,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000815:svg_62",
+     "node_id": "svg_62",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      474,
+      317,
+      503,
+      382
+     ],
+     "visible_bbox_area": 1885,
+     "gt_annotation_id": "1563:part8"
+    },
+    {
+     "sample_key": "ADE_val_00000815:svg_63",
+     "node_id": "svg_63",
+     "label": "person's back",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      353,
+      254,
+      379,
+      299
+     ],
+     "visible_bbox_area": 1170,
+     "gt_annotation_id": "1565:part1"
+    },
+    {
+     "sample_key": "ADE_val_00000815:svg_68",
+     "node_id": "svg_68",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      424,
+      306,
+      443,
+      347
+     ],
+     "visible_bbox_area": 779,
+     "gt_annotation_id": "1564:part6"
+    },
+    {
+     "sample_key": "ADE_val_00000815:svg_70",
+     "node_id": "svg_70",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      430,
+      248,
+      445,
+      264
+     ],
+     "visible_bbox_area": 240,
+     "gt_annotation_id": "1564:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000815:svg_71",
+     "node_id": "svg_71",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      360,
+      244,
+      373,
+      263
+     ],
+     "visible_bbox_area": 247,
+     "gt_annotation_id": "1565:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000821",
+   "scene_dir": "ADE_val_00000821_ADE_val_00000821",
+   "image_file": "ADE_val_00000821.jpg",
+   "total_subpart_annotations": 29,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000821:svg_105",
+     "node_id": "svg_105",
+     "label": "person's back",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      345,
+      227,
+      375,
+      270
+     ],
+     "visible_bbox_area": 1290,
+     "gt_annotation_id": "1583:part1"
+    },
+    {
+     "sample_key": "ADE_val_00000821:svg_113",
+     "node_id": "svg_113",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      457,
+      236,
+      481,
+      260
+     ],
+     "visible_bbox_area": 576,
+     "gt_annotation_id": "1580:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000821:svg_116",
+     "node_id": "svg_116",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      486,
+      289,
+      498,
+      338
+     ],
+     "visible_bbox_area": 588,
+     "gt_annotation_id": "1580:part0"
+    },
+    {
+     "sample_key": "ADE_val_00000821:svg_122",
+     "node_id": "svg_122",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      350,
+      213,
+      365,
+      229
+     ],
+     "visible_bbox_area": 240,
+     "gt_annotation_id": "1583:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000821:svg_123",
+     "node_id": "svg_123",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      329,
+      221,
+      340,
+      235
+     ],
+     "visible_bbox_area": 154,
+     "gt_annotation_id": "1582:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000837",
+   "scene_dir": "ADE_val_00000837_ADE_val_00000837",
+   "image_file": "ADE_val_00000837.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000843",
+   "scene_dir": "ADE_val_00000843_ADE_val_00000843",
+   "image_file": "ADE_val_00000843.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000843:svg_80",
+     "node_id": "svg_80",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      68,
+      531,
+      106,
+      588
+     ],
+     "visible_bbox_area": 2166,
+     "gt_annotation_id": "1698:part126"
+    },
+    {
+     "sample_key": "ADE_val_00000843:svg_82",
+     "node_id": "svg_82",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      0,
+      533,
+      57,
+      564
+     ],
+     "visible_bbox_area": 1767,
+     "gt_annotation_id": "1698:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000843:svg_84",
+     "node_id": "svg_84",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      418,
+      548,
+      437,
+      567
+     ],
+     "visible_bbox_area": 361,
+     "gt_annotation_id": "1679:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000843:svg_87",
+     "node_id": "svg_87",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      217,
+      586,
+      236,
+      598
+     ],
+     "visible_bbox_area": 228,
+     "gt_annotation_id": "1686:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000846",
+   "scene_dir": "ADE_val_00000846_ADE_val_00000846",
+   "image_file": "ADE_val_00000846.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000846:svg_43",
+     "node_id": "svg_43",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      385,
+      271,
+      400,
+      307
+     ],
+     "visible_bbox_area": 540,
+     "gt_annotation_id": "1708:part6"
+    },
+    {
+     "sample_key": "ADE_val_00000846:svg_44",
+     "node_id": "svg_44",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      383,
+      254,
+      402,
+      276
+     ],
+     "visible_bbox_area": 418,
+     "gt_annotation_id": "1708:part8"
+    },
+    {
+     "sample_key": "ADE_val_00000846:svg_46",
+     "node_id": "svg_46",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      411,
+      259,
+      429,
+      280
+     ],
+     "visible_bbox_area": 378,
+     "gt_annotation_id": "1709:part8"
+    },
+    {
+     "sample_key": "ADE_val_00000846:svg_48",
+     "node_id": "svg_48",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      399,
+      256,
+      405,
+      279
+     ],
+     "visible_bbox_area": 138,
+     "gt_annotation_id": "1708:part0"
+    },
+    {
+     "sample_key": "ADE_val_00000846:svg_50",
+     "node_id": "svg_50",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      414,
+      247,
+      426,
+      260
+     ],
+     "visible_bbox_area": 156,
+     "gt_annotation_id": "1709:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000854",
+   "scene_dir": "ADE_val_00000854_ADE_val_00000854",
+   "image_file": "ADE_val_00000854.jpg",
+   "total_subpart_annotations": 16,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000854:svg_102",
+     "node_id": "svg_102",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      539,
+      217,
+      591,
+      230
+     ],
+     "visible_bbox_area": 676,
+     "gt_annotation_id": "1769:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000854:svg_103",
+     "node_id": "svg_103",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      637,
+      219,
+      671,
+      234
+     ],
+     "visible_bbox_area": 510,
+     "gt_annotation_id": "1770:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000854:svg_106",
+     "node_id": "svg_106",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      419,
+      239,
+      440,
+      245
+     ],
+     "visible_bbox_area": 126,
+     "gt_annotation_id": "1768:part129"
+    },
+    {
+     "sample_key": "ADE_val_00000854:svg_94",
+     "node_id": "svg_94",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      594,
+      218,
+      648,
+      260
+     ],
+     "visible_bbox_area": 2268,
+     "gt_annotation_id": "1769:part126"
+    },
+    {
+     "sample_key": "ADE_val_00000854:svg_96",
+     "node_id": "svg_96",
+     "label": "car's bumper",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      223,
+      256,
+      276,
+      282
+     ],
+     "visible_bbox_area": 1378,
+     "gt_annotation_id": "1766:part125"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000855",
+   "scene_dir": "ADE_val_00000855_ADE_val_00000855",
+   "image_file": "ADE_val_00000855.jpg",
+   "total_subpart_annotations": 14,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000855:svg_56",
+     "node_id": "svg_56",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      167,
+      262,
+      250,
+      287
+     ],
+     "visible_bbox_area": 2075,
+     "gt_annotation_id": "1771:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000855:svg_58",
+     "node_id": "svg_58",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      17,
+      230,
+      37,
+      254
+     ],
+     "visible_bbox_area": 480,
+     "gt_annotation_id": "1773:part5"
+    },
+    {
+     "sample_key": "ADE_val_00000855:svg_61",
+     "node_id": "svg_61",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      164,
+      305,
+      179,
+      341
+     ],
+     "visible_bbox_area": 540,
+     "gt_annotation_id": "1771:part132"
+    },
+    {
+     "sample_key": "ADE_val_00000855:svg_64",
+     "node_id": "svg_64",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      662,
+      305,
+      683,
+      319
+     ],
+     "visible_bbox_area": 294,
+     "gt_annotation_id": "1776:part127"
+    },
+    {
+     "sample_key": "ADE_val_00000855:svg_67",
+     "node_id": "svg_67",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      59,
+      246,
+      73,
+      256
+     ],
+     "visible_bbox_area": 140,
+     "gt_annotation_id": "1775:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000867",
+   "scene_dir": "ADE_val_00000867_ADE_val_00000867",
+   "image_file": "ADE_val_00000867.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000867:svg_70",
+     "node_id": "svg_70",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_22",
+     "bbox_xyxy": [
+      56,
+      145,
+      66,
+      160
+     ],
+     "visible_bbox_area": 150,
+     "gt_annotation_id": "1799:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000897",
+   "scene_dir": "ADE_val_00000897_ADE_val_00000897",
+   "image_file": "ADE_val_00000897.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000897:svg_52",
+     "node_id": "svg_52",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      1,
+      121,
+      58,
+      143
+     ],
+     "visible_bbox_area": 1254,
+     "gt_annotation_id": "1812:part133"
+    },
+    {
+     "sample_key": "ADE_val_00000897:svg_54",
+     "node_id": "svg_54",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      42,
+      158,
+      64,
+      170
+     ],
+     "visible_bbox_area": 264,
+     "gt_annotation_id": "1812:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000898",
+   "scene_dir": "ADE_val_00000898_ADE_val_00000898",
+   "image_file": "ADE_val_00000898.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000911",
+   "scene_dir": "ADE_val_00000911_ADE_val_00000911",
+   "image_file": "ADE_val_00000911.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000911:svg_102",
+     "node_id": "svg_102",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      177,
+      134,
+      226,
+      165
+     ],
+     "visible_bbox_area": 1519,
+     "gt_annotation_id": "1846:part46"
+    },
+    {
+     "sample_key": "ADE_val_00000911:svg_103",
+     "node_id": "svg_103",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      176,
+      164,
+      227,
+      177
+     ],
+     "visible_bbox_area": 663,
+     "gt_annotation_id": "1846:part49"
+    },
+    {
+     "sample_key": "ADE_val_00000911:svg_107",
+     "node_id": "svg_107",
+     "label": "chair's arm",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      224,
+      150,
+      233,
+      158
+     ],
+     "visible_bbox_area": 72,
+     "gt_annotation_id": "1846:part45"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000924",
+   "scene_dir": "ADE_val_00000924_ADE_val_00000924",
+   "image_file": "ADE_val_00000924.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000943",
+   "scene_dir": "ADE_val_00000943_ADE_val_00000943",
+   "image_file": "ADE_val_00000943.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000943:svg_20",
+     "node_id": "svg_20",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      5,
+      40,
+      16,
+      57
+     ],
+     "visible_bbox_area": 187,
+     "gt_annotation_id": "1873:part26"
+    },
+    {
+     "sample_key": "ADE_val_00000943:svg_98",
+     "node_id": "svg_98",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      75,
+      89,
+      100,
+      178
+     ],
+     "visible_bbox_area": 2225,
+     "gt_annotation_id": "1874:part0"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000947",
+   "scene_dir": "ADE_val_00000947_ADE_val_00000947",
+   "image_file": "ADE_val_00000947.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000947:svg_82",
+     "node_id": "svg_82",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      361,
+      46,
+      406,
+      64
+     ],
+     "visible_bbox_area": 810,
+     "gt_annotation_id": "1882:part37"
+    },
+    {
+     "sample_key": "ADE_val_00000947:svg_83",
+     "node_id": "svg_83",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      371,
+      149,
+      376,
+      162
+     ],
+     "visible_bbox_area": 65,
+     "gt_annotation_id": "1884:part37"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000948",
+   "scene_dir": "ADE_val_00000948_ADE_val_00000948",
+   "image_file": "ADE_val_00000948.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00000962",
+   "scene_dir": "ADE_val_00000962_ADE_val_00000962",
+   "image_file": "ADE_val_00000962.jpg",
+   "total_subpart_annotations": 31,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000962:svg_116",
+     "node_id": "svg_116",
+     "label": "chair's stretcher",
+     "level": "part",
+     "parent_id": "svg_29",
+     "bbox_xyxy": [
+      563,
+      354,
+      580,
+      364
+     ],
+     "visible_bbox_area": 170,
+     "gt_annotation_id": "1941:part52"
+    },
+    {
+     "sample_key": "ADE_val_00000962:svg_88",
+     "node_id": "svg_88",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_23",
+     "bbox_xyxy": [
+      69,
+      53,
+      191,
+      145
+     ],
+     "visible_bbox_area": 11224,
+     "gt_annotation_id": "1934:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000962:svg_91",
+     "node_id": "svg_91",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      520,
+      248,
+      579,
+      334
+     ],
+     "visible_bbox_area": 5074,
+     "gt_annotation_id": "1944:part46"
+    },
+    {
+     "sample_key": "ADE_val_00000962:svg_94",
+     "node_id": "svg_94",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      358,
+      104,
+      410,
+      155
+     ],
+     "visible_bbox_area": 2652,
+     "gt_annotation_id": "1936:part18"
+    },
+    {
+     "sample_key": "ADE_val_00000962:svg_97",
+     "node_id": "svg_97",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_25",
+     "bbox_xyxy": [
+      304,
+      322,
+      346,
+      355
+     ],
+     "visible_bbox_area": 1386,
+     "gt_annotation_id": "1942:part49"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000965",
+   "scene_dir": "ADE_val_00000965_ADE_val_00000965",
+   "image_file": "ADE_val_00000965.jpg",
+   "total_subpart_annotations": 12,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000965:svg_106",
+     "node_id": "svg_106",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      415,
+      395,
+      577,
+      512
+     ],
+     "visible_bbox_area": 18954,
+     "gt_annotation_id": "1956:part102"
+    },
+    {
+     "sample_key": "ADE_val_00000965:svg_108",
+     "node_id": "svg_108",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      328,
+      314,
+      360,
+      370
+     ],
+     "visible_bbox_area": 1792,
+     "gt_annotation_id": "1955:part102"
+    },
+    {
+     "sample_key": "ADE_val_00000965:svg_110",
+     "node_id": "svg_110",
+     "label": "sofa's seat cushion",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      490,
+      413,
+      542,
+      449
+     ],
+     "visible_bbox_area": 1872,
+     "gt_annotation_id": "1956:part107"
+    },
+    {
+     "sample_key": "ADE_val_00000965:svg_116",
+     "node_id": "svg_116",
+     "label": "sconce's arm",
+     "level": "part",
+     "parent_id": "svg_20",
+     "bbox_xyxy": [
+      566,
+      171,
+      579,
+      193
+     ],
+     "visible_bbox_area": 286,
+     "gt_annotation_id": "1958:part39"
+    },
+    {
+     "sample_key": "ADE_val_00000965:svg_118",
+     "node_id": "svg_118",
+     "label": "chandelier's canopy",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      287,
+      99,
+      297,
+      108
+     ],
+     "visible_bbox_area": 90,
+     "gt_annotation_id": "1957:part60"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000966",
+   "scene_dir": "ADE_val_00000966_ADE_val_00000966",
+   "image_file": "ADE_val_00000966.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000966:svg_78",
+     "node_id": "svg_78",
+     "label": "armchair's seat cushion",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      525,
+      414,
+      738,
+      502
+     ],
+     "visible_bbox_area": 18744,
+     "gt_annotation_id": "1962:part83"
+    },
+    {
+     "sample_key": "ADE_val_00000966:svg_79",
+     "node_id": "svg_79",
+     "label": "armchair's seat cushion",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      171,
+      372,
+      289,
+      428
+     ],
+     "visible_bbox_area": 6608,
+     "gt_annotation_id": "1960:part83"
+    },
+    {
+     "sample_key": "ADE_val_00000966:svg_85",
+     "node_id": "svg_85",
+     "label": "lamp's canopy",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      231,
+      23,
+      250,
+      34
+     ],
+     "visible_bbox_area": 209,
+     "gt_annotation_id": "1963:part32"
+    },
+    {
+     "sample_key": "ADE_val_00000966:svg_86",
+     "node_id": "svg_86",
+     "label": "lamp's light source",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      249,
+      107,
+      256,
+      119
+     ],
+     "visible_bbox_area": 84,
+     "gt_annotation_id": "1963:part36"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000969",
+   "scene_dir": "ADE_val_00000969_ADE_val_00000969",
+   "image_file": "ADE_val_00000969.jpg",
+   "total_subpart_annotations": 10,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000969:svg_84",
+     "node_id": "svg_84",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      647,
+      317,
+      749,
+      415
+     ],
+     "visible_bbox_area": 9996,
+     "gt_annotation_id": "1978:part77"
+    },
+    {
+     "sample_key": "ADE_val_00000969:svg_85",
+     "node_id": "svg_85",
+     "label": "armchair's seat cushion",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      655,
+      346,
+      740,
+      408
+     ],
+     "visible_bbox_area": 5270,
+     "gt_annotation_id": "1978:part83"
+    },
+    {
+     "sample_key": "ADE_val_00000969:svg_88",
+     "node_id": "svg_88",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      335,
+      202,
+      343,
+      357
+     ],
+     "visible_bbox_area": 1240,
+     "gt_annotation_id": "1976:part33"
+    },
+    {
+     "sample_key": "ADE_val_00000969:svg_89",
+     "node_id": "svg_89",
+     "label": "lamp's base",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      317,
+      349,
+      368,
+      389
+     ],
+     "visible_bbox_area": 2040,
+     "gt_annotation_id": "1976:part31"
+    },
+    {
+     "sample_key": "ADE_val_00000969:svg_90",
+     "node_id": "svg_90",
+     "label": "ottoman's leg",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      557,
+      449,
+      586,
+      463
+     ],
+     "visible_bbox_area": 406,
+     "gt_annotation_id": "1977:part85"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000972",
+   "scene_dir": "ADE_val_00000972_ADE_val_00000972",
+   "image_file": "ADE_val_00000972.jpg",
+   "total_subpart_annotations": 16,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000972:svg_102",
+     "node_id": "svg_102",
+     "label": "table's apron",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      286,
+      311,
+      334,
+      325
+     ],
+     "visible_bbox_area": 672,
+     "gt_annotation_id": "1996:part70"
+    },
+    {
+     "sample_key": "ADE_val_00000972:svg_103",
+     "node_id": "svg_103",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      290,
+      319,
+      299,
+      349
+     ],
+     "visible_bbox_area": 270,
+     "gt_annotation_id": "1996:part72"
+    },
+    {
+     "sample_key": "ADE_val_00000972:svg_90",
+     "node_id": "svg_90",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      370,
+      426,
+      495,
+      513
+     ],
+     "visible_bbox_area": 10875,
+     "gt_annotation_id": "1993:part102"
+    },
+    {
+     "sample_key": "ADE_val_00000972:svg_92",
+     "node_id": "svg_92",
+     "label": "armchair's back",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      172,
+      287,
+      240,
+      339
+     ],
+     "visible_bbox_area": 3536,
+     "gt_annotation_id": "1992:part78"
+    },
+    {
+     "sample_key": "ADE_val_00000972:svg_93",
+     "node_id": "svg_93",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      474,
+      326,
+      512,
+      410
+     ],
+     "visible_bbox_area": 3192,
+     "gt_annotation_id": "1991:part77"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00000973",
+   "scene_dir": "ADE_val_00000973_ADE_val_00000973",
+   "image_file": "ADE_val_00000973.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00000973:svg_90",
+     "node_id": "svg_90",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      374,
+      410,
+      386,
+      425
+     ],
+     "visible_bbox_area": 180,
+     "gt_annotation_id": "1998:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001005",
+   "scene_dir": "ADE_val_00001005_ADE_val_00001005",
+   "image_file": "ADE_val_00001005.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001005:svg_79",
+     "node_id": "svg_79",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      469,
+      380,
+      494,
+      406
+     ],
+     "visible_bbox_area": 650,
+     "gt_annotation_id": "2051:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001005:svg_80",
+     "node_id": "svg_80",
+     "label": "airplane's turbine engine",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      571,
+      279,
+      581,
+      289
+     ],
+     "visible_bbox_area": 100,
+     "gt_annotation_id": "2049:part204"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001026",
+   "scene_dir": "ADE_val_00001026_ADE_val_00001026",
+   "image_file": "ADE_val_00001026.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001026:svg_123",
+     "node_id": "svg_123",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      126,
+      356,
+      179,
+      396
+     ],
+     "visible_bbox_area": 2120,
+     "gt_annotation_id": "2089:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001026:svg_126",
+     "node_id": "svg_126",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      12,
+      326,
+      41,
+      346
+     ],
+     "visible_bbox_area": 580,
+     "gt_annotation_id": "2090:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001026:svg_128",
+     "node_id": "svg_128",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      126,
+      300,
+      143,
+      322
+     ],
+     "visible_bbox_area": 374,
+     "gt_annotation_id": "2089:part5"
+    },
+    {
+     "sample_key": "ADE_val_00001026:svg_130",
+     "node_id": "svg_130",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_38",
+     "bbox_xyxy": [
+      270,
+      283,
+      286,
+      303
+     ],
+     "visible_bbox_area": 320,
+     "gt_annotation_id": "2101:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001031",
+   "scene_dir": "ADE_val_00001031_ADE_val_00001031",
+   "image_file": "ADE_val_00001031.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001031:svg_105",
+     "node_id": "svg_105",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      662,
+      271,
+      678,
+      284
+     ],
+     "visible_bbox_area": 208,
+     "gt_annotation_id": "2113:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001031:svg_106",
+     "node_id": "svg_106",
+     "label": "van's wheel",
+     "level": "part",
+     "parent_id": "svg_22",
+     "bbox_xyxy": [
+      582,
+      267,
+      595,
+      279
+     ],
+     "visible_bbox_area": 156,
+     "gt_annotation_id": "2110:part196"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001048",
+   "scene_dir": "ADE_val_00001048_ADE_val_00001048",
+   "image_file": "ADE_val_00001048.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001048:svg_55",
+     "node_id": "svg_55",
+     "label": "chair's arm",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      116,
+      315,
+      250,
+      365
+     ],
+     "visible_bbox_area": 6700,
+     "gt_annotation_id": "2135:part45"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001072",
+   "scene_dir": "ADE_val_00001072_ADE_val_00001072",
+   "image_file": "ADE_val_00001072.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001072:svg_140",
+     "node_id": "svg_140",
+     "label": "table's top",
+     "level": "part",
+     "parent_id": "svg_21",
+     "bbox_xyxy": [
+      320,
+      241,
+      393,
+      262
+     ],
+     "visible_bbox_area": 1533,
+     "gt_annotation_id": "2183:part74"
+    },
+    {
+     "sample_key": "ADE_val_00001072:svg_143",
+     "node_id": "svg_143",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_22",
+     "bbox_xyxy": [
+      306,
+      234,
+      314,
+      283
+     ],
+     "visible_bbox_area": 392,
+     "gt_annotation_id": "2182:part72"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001076",
+   "scene_dir": "ADE_val_00001076_ADE_val_00001076",
+   "image_file": "ADE_val_00001076.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001076:svg_62",
+     "node_id": "svg_62",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      519,
+      281,
+      554,
+      307
+     ],
+     "visible_bbox_area": 910,
+     "gt_annotation_id": "2188:part26"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001080",
+   "scene_dir": "ADE_val_00001080_ADE_val_00001080",
+   "image_file": "ADE_val_00001080.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001097",
+   "scene_dir": "ADE_val_00001097_ADE_val_00001097",
+   "image_file": "ADE_val_00001097.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001097:svg_56",
+     "node_id": "svg_56",
+     "label": "toilet's lid",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      56,
+      491,
+      163,
+      553
+     ],
+     "visible_bbox_area": 6634,
+     "gt_annotation_id": "2239:part17"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001099",
+   "scene_dir": "ADE_val_00001099_ADE_val_00001099",
+   "image_file": "ADE_val_00001099.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001099:svg_72",
+     "node_id": "svg_72",
+     "label": "toilet's lid",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      140,
+      178,
+      213,
+      232
+     ],
+     "visible_bbox_area": 3942,
+     "gt_annotation_id": "2242:part17"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001102",
+   "scene_dir": "ADE_val_00001102_ADE_val_00001102",
+   "image_file": "ADE_val_00001102.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001102:svg_49",
+     "node_id": "svg_49",
+     "label": "toilet's lid",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      293,
+      471,
+      471,
+      539
+     ],
+     "visible_bbox_area": 12104,
+     "gt_annotation_id": "2244:part17"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001127",
+   "scene_dir": "ADE_val_00001127_ADE_val_00001127",
+   "image_file": "ADE_val_00001127.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001127:svg_72",
+     "node_id": "svg_72",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      504,
+      293,
+      545,
+      397
+     ],
+     "visible_bbox_area": 4264,
+     "gt_annotation_id": "2294:part77"
+    },
+    {
+     "sample_key": "ADE_val_00001127:svg_74",
+     "node_id": "svg_74",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      137,
+      281,
+      156,
+      323
+     ],
+     "visible_bbox_area": 798,
+     "gt_annotation_id": "2291:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001146",
+   "scene_dir": "ADE_val_00001146_ADE_val_00001146",
+   "image_file": "ADE_val_00001146.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001146:svg_32",
+     "node_id": "svg_32",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      239,
+      200,
+      265,
+      284
+     ],
+     "visible_bbox_area": 2184,
+     "gt_annotation_id": "2357:part33"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001148",
+   "scene_dir": "ADE_val_00001148_ADE_val_00001148",
+   "image_file": "ADE_val_00001148.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001154",
+   "scene_dir": "ADE_val_00001154_ADE_val_00001154",
+   "image_file": "ADE_val_00001154.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001154:svg_60",
+     "node_id": "svg_60",
+     "label": "bed's footboard",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      383,
+      250,
+      565,
+      458
+     ],
+     "visible_bbox_area": 37856,
+     "gt_annotation_id": "2377:part66"
+    },
+    {
+     "sample_key": "ADE_val_00001154:svg_62",
+     "node_id": "svg_62",
+     "label": "fan's blade",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      456,
+      7,
+      571,
+      47
+     ],
+     "visible_bbox_area": 4600,
+     "gt_annotation_id": "2375:part95"
+    },
+    {
+     "sample_key": "ADE_val_00001154:svg_63",
+     "node_id": "svg_63",
+     "label": "table's drawer",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      139,
+      327,
+      215,
+      355
+     ],
+     "visible_bbox_area": 2128,
+     "gt_annotation_id": "2376:part71"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001156",
+   "scene_dir": "ADE_val_00001156_ADE_val_00001156",
+   "image_file": "ADE_val_00001156.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001160",
+   "scene_dir": "ADE_val_00001160_ADE_val_00001160",
+   "image_file": "ADE_val_00001160.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001160:svg_61",
+     "node_id": "svg_61",
+     "label": "bed's footboard",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      223,
+      243,
+      523,
+      512
+     ],
+     "visible_bbox_area": 80700,
+     "gt_annotation_id": "2391:part66"
+    },
+    {
+     "sample_key": "ADE_val_00001160:svg_63",
+     "node_id": "svg_63",
+     "label": "fan's blade",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      431,
+      5,
+      571,
+      38
+     ],
+     "visible_bbox_area": 4620,
+     "gt_annotation_id": "2392:part95"
+    },
+    {
+     "sample_key": "ADE_val_00001160:svg_64",
+     "node_id": "svg_64",
+     "label": "table's drawer",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      315,
+      282,
+      363,
+      311
+     ],
+     "visible_bbox_area": 1392,
+     "gt_annotation_id": "2390:part71"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001161",
+   "scene_dir": "ADE_val_00001161_ADE_val_00001161",
+   "image_file": "ADE_val_00001161.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001165",
+   "scene_dir": "ADE_val_00001165_ADE_val_00001165",
+   "image_file": "ADE_val_00001165.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001168",
+   "scene_dir": "ADE_val_00001168_ADE_val_00001168",
+   "image_file": "ADE_val_00001168.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001168:svg_87",
+     "node_id": "svg_87",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      573,
+      251,
+      616,
+      289
+     ],
+     "visible_bbox_area": 1634,
+     "gt_annotation_id": "2411:part37"
+    },
+    {
+     "sample_key": "ADE_val_00001168:svg_91",
+     "node_id": "svg_91",
+     "label": "clock's face",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      563,
+      318,
+      583,
+      335
+     ],
+     "visible_bbox_area": 340,
+     "gt_annotation_id": "2408:part13"
+    },
+    {
+     "sample_key": "ADE_val_00001168:svg_92",
+     "node_id": "svg_92",
+     "label": "lamp's tube",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      593,
+      287,
+      598,
+      334
+     ],
+     "visible_bbox_area": 235,
+     "gt_annotation_id": "2411:part38"
+    },
+    {
+     "sample_key": "ADE_val_00001168:svg_94",
+     "node_id": "svg_94",
+     "label": "lamp's tube",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      328,
+      273,
+      334,
+      293
+     ],
+     "visible_bbox_area": 120,
+     "gt_annotation_id": "2412:part38"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001177",
+   "scene_dir": "ADE_val_00001177_ADE_val_00001177",
+   "image_file": "ADE_val_00001177.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001177:svg_69",
+     "node_id": "svg_69",
+     "label": "chest of drawers's drawer",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      164,
+      170,
+      240,
+      271
+     ],
+     "visible_bbox_area": 7676,
+     "gt_annotation_id": "2439:part55"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001180",
+   "scene_dir": "ADE_val_00001180_ADE_val_00001180",
+   "image_file": "ADE_val_00001180.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001194",
+   "scene_dir": "ADE_val_00001194_ADE_val_00001194",
+   "image_file": "ADE_val_00001194.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001198",
+   "scene_dir": "ADE_val_00001198_ADE_val_00001198",
+   "image_file": "ADE_val_00001198.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001198:svg_88",
+     "node_id": "svg_88",
+     "label": "microwave's door",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      149,
+      222,
+      274,
+      306
+     ],
+     "visible_bbox_area": 10500,
+     "gt_annotation_id": "2474:part155"
+    },
+    {
+     "sample_key": "ADE_val_00001198:svg_89",
+     "node_id": "svg_89",
+     "label": "microwave's window",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      166,
+      236,
+      258,
+      289
+     ],
+     "visible_bbox_area": 4876,
+     "gt_annotation_id": "2474:part159"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001225",
+   "scene_dir": "ADE_val_00001225_ADE_val_00001225",
+   "image_file": "ADE_val_00001225.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001225:svg_69",
+     "node_id": "svg_69",
+     "label": "person's hand",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      551,
+      250,
+      672,
+      414
+     ],
+     "visible_bbox_area": 19844,
+     "gt_annotation_id": "2498:part4"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001246",
+   "scene_dir": "ADE_val_00001246_ADE_val_00001246",
+   "image_file": "ADE_val_00001246.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001246:svg_7",
+     "node_id": "svg_7",
+     "label": "bed's headboard",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      194,
+      154,
+      235,
+      175
+     ],
+     "visible_bbox_area": 861,
+     "gt_annotation_id": "2516:part67"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001271",
+   "scene_dir": "ADE_val_00001271_ADE_val_00001271",
+   "image_file": "ADE_val_00001271.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001271:svg_106",
+     "node_id": "svg_106",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      228,
+      180,
+      241,
+      248
+     ],
+     "visible_bbox_area": 884,
+     "gt_annotation_id": "2552:part48"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001295",
+   "scene_dir": "ADE_val_00001295_ADE_val_00001295",
+   "image_file": "ADE_val_00001295.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001301",
+   "scene_dir": "ADE_val_00001301_ADE_val_00001301",
+   "image_file": "ADE_val_00001301.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001301:svg_91",
+     "node_id": "svg_91",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      84,
+      173,
+      101,
+      191
+     ],
+     "visible_bbox_area": 306,
+     "gt_annotation_id": "2592:part48"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001302",
+   "scene_dir": "ADE_val_00001302_ADE_val_00001302",
+   "image_file": "ADE_val_00001302.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001302:svg_54",
+     "node_id": "svg_54",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      267,
+      234,
+      324,
+      338
+     ],
+     "visible_bbox_area": 5928,
+     "gt_annotation_id": "2594:part46"
+    },
+    {
+     "sample_key": "ADE_val_00001302:svg_55",
+     "node_id": "svg_55",
+     "label": "chair's back",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      515,
+      237,
+      582,
+      342
+     ],
+     "visible_bbox_area": 7035,
+     "gt_annotation_id": "2593:part46"
+    },
+    {
+     "sample_key": "ADE_val_00001302:svg_57",
+     "node_id": "svg_57",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      295,
+      317,
+      351,
+      344
+     ],
+     "visible_bbox_area": 1512,
+     "gt_annotation_id": "2594:part49"
+    },
+    {
+     "sample_key": "ADE_val_00001302:svg_60",
+     "node_id": "svg_60",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      464,
+      336,
+      487,
+      399
+     ],
+     "visible_bbox_area": 1449,
+     "gt_annotation_id": "2593:part48"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001332",
+   "scene_dir": "ADE_val_00001332_ADE_val_00001332",
+   "image_file": "ADE_val_00001332.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001332:svg_129",
+     "node_id": "svg_129",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      480,
+      391,
+      533,
+      427
+     ],
+     "visible_bbox_area": 1908,
+     "gt_annotation_id": "2680:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001332:svg_130",
+     "node_id": "svg_130",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      273,
+      397,
+      299,
+      400
+     ],
+     "visible_bbox_area": 78,
+     "gt_annotation_id": "2682:part133"
+    },
+    {
+     "sample_key": "ADE_val_00001332:svg_131",
+     "node_id": "svg_131",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      391,
+      428,
+      417,
+      466
+     ],
+     "visible_bbox_area": 988,
+     "gt_annotation_id": "2682:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001332:svg_135",
+     "node_id": "svg_135",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      426,
+      386,
+      451,
+      394
+     ],
+     "visible_bbox_area": 200,
+     "gt_annotation_id": "2681:part133"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001359",
+   "scene_dir": "ADE_val_00001359_ADE_val_00001359",
+   "image_file": "ADE_val_00001359.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001359:svg_76",
+     "node_id": "svg_76",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      119,
+      102,
+      130,
+      112
+     ],
+     "visible_bbox_area": 110,
+     "gt_annotation_id": "2706:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001375",
+   "scene_dir": "ADE_val_00001375_ADE_val_00001375",
+   "image_file": "ADE_val_00001375.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001375:svg_91",
+     "node_id": "svg_91",
+     "label": "pool table's bed",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      341,
+      288,
+      679,
+      327
+     ],
+     "visible_bbox_area": 13182,
+     "gt_annotation_id": "2714:part186"
+    },
+    {
+     "sample_key": "ADE_val_00001375:svg_93",
+     "node_id": "svg_93",
+     "label": "pool table's pocket",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      324,
+      325,
+      388,
+      348
+     ],
+     "visible_bbox_area": 1472,
+     "gt_annotation_id": "2714:part188"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001378",
+   "scene_dir": "ADE_val_00001378_ADE_val_00001378",
+   "image_file": "ADE_val_00001378.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001378:svg_100",
+     "node_id": "svg_100",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      278,
+      422,
+      306,
+      475
+     ],
+     "visible_bbox_area": 1484,
+     "gt_annotation_id": "2727:part48"
+    },
+    {
+     "sample_key": "ADE_val_00001378:svg_91",
+     "node_id": "svg_91",
+     "label": "cabinet's side",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      363,
+      95,
+      399,
+      213
+     ],
+     "visible_bbox_area": 4248,
+     "gt_annotation_id": "2722:part22"
+    },
+    {
+     "sample_key": "ADE_val_00001378:svg_92",
+     "node_id": "svg_92",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      234,
+      226,
+      275,
+      300
+     ],
+     "visible_bbox_area": 3034,
+     "gt_annotation_id": "2723:part18"
+    },
+    {
+     "sample_key": "ADE_val_00001378:svg_94",
+     "node_id": "svg_94",
+     "label": "cabinet's side",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      333,
+      92,
+      356,
+      161
+     ],
+     "visible_bbox_area": 1587,
+     "gt_annotation_id": "2721:part22"
+    },
+    {
+     "sample_key": "ADE_val_00001378:svg_96",
+     "node_id": "svg_96",
+     "label": "chair's seat",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      417,
+      404,
+      462,
+      433
+     ],
+     "visible_bbox_area": 1305,
+     "gt_annotation_id": "2726:part49"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001385",
+   "scene_dir": "ADE_val_00001385_ADE_val_00001385",
+   "image_file": "ADE_val_00001385.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001385:svg_49",
+     "node_id": "svg_49",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      426,
+      254,
+      502,
+      359
+     ],
+     "visible_bbox_area": 7980,
+     "gt_annotation_id": "2732:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001385:svg_51",
+     "node_id": "svg_51",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      389,
+      345,
+      432,
+      397
+     ],
+     "visible_bbox_area": 2236,
+     "gt_annotation_id": "2732:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001403",
+   "scene_dir": "ADE_val_00001403_ADE_val_00001403",
+   "image_file": "ADE_val_00001403.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001434",
+   "scene_dir": "ADE_val_00001434_ADE_val_00001434",
+   "image_file": "ADE_val_00001434.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001434:svg_29",
+     "node_id": "svg_29",
+     "label": "table's top",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      517,
+      284,
+      617,
+      311
+     ],
+     "visible_bbox_area": 2700,
+     "gt_annotation_id": "2782:part74"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001446",
+   "scene_dir": "ADE_val_00001446_ADE_val_00001446",
+   "image_file": "ADE_val_00001446.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001446:svg_56",
+     "node_id": "svg_56",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      263,
+      94,
+      306,
+      138
+     ],
+     "visible_bbox_area": 1892,
+     "gt_annotation_id": "2787:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001455",
+   "scene_dir": "ADE_val_00001455_ADE_val_00001455",
+   "image_file": "ADE_val_00001455.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001457",
+   "scene_dir": "ADE_val_00001457_ADE_val_00001457",
+   "image_file": "ADE_val_00001457.jpg",
+   "total_subpart_annotations": 10,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001457:svg_44",
+     "node_id": "svg_44",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      228,
+      326,
+      312,
+      457
+     ],
+     "visible_bbox_area": 11004,
+     "gt_annotation_id": "2799:part18"
+    },
+    {
+     "sample_key": "ADE_val_00001457:svg_46",
+     "node_id": "svg_46",
+     "label": "cabinet's skirt",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      333,
+      457,
+      392,
+      469
+     ],
+     "visible_bbox_area": 708,
+     "gt_annotation_id": "2799:part23"
+    },
+    {
+     "sample_key": "ADE_val_00001457:svg_47",
+     "node_id": "svg_47",
+     "label": "cabinet's skirt",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      380,
+      447,
+      581,
+      502
+     ],
+     "visible_bbox_area": 11055,
+     "gt_annotation_id": "2797:part23"
+    },
+    {
+     "sample_key": "ADE_val_00001457:svg_48",
+     "node_id": "svg_48",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      168,
+      294,
+      233,
+      345
+     ],
+     "visible_bbox_area": 3315,
+     "gt_annotation_id": "2800:part19"
+    },
+    {
+     "sample_key": "ADE_val_00001457:svg_53",
+     "node_id": "svg_53",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      390,
+      322,
+      394,
+      351
+     ],
+     "visible_bbox_area": 116,
+     "gt_annotation_id": "2799:part19"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001460",
+   "scene_dir": "ADE_val_00001460_ADE_val_00001460",
+   "image_file": "ADE_val_00001460.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001460:svg_106",
+     "node_id": "svg_106",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      198,
+      83,
+      245,
+      159
+     ],
+     "visible_bbox_area": 3572,
+     "gt_annotation_id": "2806:part18"
+    },
+    {
+     "sample_key": "ADE_val_00001460:svg_108",
+     "node_id": "svg_108",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_20",
+     "bbox_xyxy": [
+      39,
+      65,
+      70,
+      144
+     ],
+     "visible_bbox_area": 2449,
+     "gt_annotation_id": "2809:part18"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001486",
+   "scene_dir": "ADE_val_00001486_ADE_val_00001486",
+   "image_file": "ADE_val_00001486.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001486:svg_50",
+     "node_id": "svg_50",
+     "label": "microwave's button panel",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      570,
+      253,
+      596,
+      309
+     ],
+     "visible_bbox_area": 1456,
+     "gt_annotation_id": "2970:part154"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001495",
+   "scene_dir": "ADE_val_00001495_ADE_val_00001495",
+   "image_file": "ADE_val_00001495.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001495:svg_58",
+     "node_id": "svg_58",
+     "label": "washer's door",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      65,
+      238,
+      167,
+      386
+     ],
+     "visible_bbox_area": 15096,
+     "gt_annotation_id": "3003:part219"
+    },
+    {
+     "sample_key": "ADE_val_00001495:svg_64",
+     "node_id": "svg_64",
+     "label": "washer's button panel",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      364,
+      223,
+      428,
+      244
+     ],
+     "visible_bbox_area": 1344,
+     "gt_annotation_id": "3005:part218"
+    },
+    {
+     "sample_key": "ADE_val_00001495:svg_65",
+     "node_id": "svg_65",
+     "label": "washer's button panel",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      303,
+      223,
+      365,
+      245
+     ],
+     "visible_bbox_area": 1364,
+     "gt_annotation_id": "3006:part218"
+    },
+    {
+     "sample_key": "ADE_val_00001495:svg_66",
+     "node_id": "svg_66",
+     "label": "washer's button panel",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      499,
+      227,
+      551,
+      247
+     ],
+     "visible_bbox_area": 1040,
+     "gt_annotation_id": "3008:part218"
+    },
+    {
+     "sample_key": "ADE_val_00001495:svg_67",
+     "node_id": "svg_67",
+     "label": "washer's door",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      478,
+      168,
+      497,
+      225
+     ],
+     "visible_bbox_area": 1083,
+     "gt_annotation_id": "3004:part219"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001504",
+   "scene_dir": "ADE_val_00001504_ADE_val_00001504",
+   "image_file": "ADE_val_00001504.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001504:svg_51",
+     "node_id": "svg_51",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      85,
+      209,
+      189,
+      491
+     ],
+     "visible_bbox_area": 29328,
+     "gt_annotation_id": "3013:part77"
+    },
+    {
+     "sample_key": "ADE_val_00001504:svg_52",
+     "node_id": "svg_52",
+     "label": "armchair's seat cushion",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      178,
+      314,
+      414,
+      392
+     ],
+     "visible_bbox_area": 18408,
+     "gt_annotation_id": "3013:part83"
+    },
+    {
+     "sample_key": "ADE_val_00001504:svg_53",
+     "node_id": "svg_53",
+     "label": "armchair's seat base",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      201,
+      397,
+      411,
+      488
+     ],
+     "visible_bbox_area": 19110,
+     "gt_annotation_id": "3013:part82"
+    },
+    {
+     "sample_key": "ADE_val_00001504:svg_58",
+     "node_id": "svg_58",
+     "label": "armchair's leg",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      162,
+      478,
+      186,
+      534
+     ],
+     "visible_bbox_area": 1344,
+     "gt_annotation_id": "3013:part80"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001508",
+   "scene_dir": "ADE_val_00001508_ADE_val_00001508",
+   "image_file": "ADE_val_00001508.jpg",
+   "total_subpart_annotations": 12,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001508:svg_73",
+     "node_id": "svg_73",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      22,
+      367,
+      292,
+      512
+     ],
+     "visible_bbox_area": 39150,
+     "gt_annotation_id": "3022:part102"
+    },
+    {
+     "sample_key": "ADE_val_00001508:svg_78",
+     "node_id": "svg_78",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      30,
+      295,
+      142,
+      419
+     ],
+     "visible_bbox_area": 13888,
+     "gt_annotation_id": "3022:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001508:svg_80",
+     "node_id": "svg_80",
+     "label": "sofa's back",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      9,
+      357,
+      64,
+      465
+     ],
+     "visible_bbox_area": 5940,
+     "gt_annotation_id": "3022:part103"
+    },
+    {
+     "sample_key": "ADE_val_00001508:svg_81",
+     "node_id": "svg_81",
+     "label": "sofa's seat base",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      459,
+      418,
+      601,
+      512
+     ],
+     "visible_bbox_area": 13348,
+     "gt_annotation_id": "3020:part106"
+    },
+    {
+     "sample_key": "ADE_val_00001508:svg_83",
+     "node_id": "svg_83",
+     "label": "sofa's leg",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      237,
+      488,
+      268,
+      512
+     ],
+     "visible_bbox_area": 744,
+     "gt_annotation_id": "3022:part105"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001512",
+   "scene_dir": "ADE_val_00001512_ADE_val_00001512",
+   "image_file": "ADE_val_00001512.jpg",
+   "total_subpart_annotations": 15,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001512:svg_110",
+     "node_id": "svg_110",
+     "label": "sofa's seat cushion",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      15,
+      316,
+      133,
+      371
+     ],
+     "visible_bbox_area": 6490,
+     "gt_annotation_id": "3053:part107"
+    },
+    {
+     "sample_key": "ADE_val_00001512:svg_111",
+     "node_id": "svg_111",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      0,
+      244,
+      72,
+      327
+     ],
+     "visible_bbox_area": 5976,
+     "gt_annotation_id": "3053:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001512:svg_116",
+     "node_id": "svg_116",
+     "label": "coffee table's leg",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      625,
+      324,
+      651,
+      391
+     ],
+     "visible_bbox_area": 1742,
+     "gt_annotation_id": "3054:part98"
+    },
+    {
+     "sample_key": "ADE_val_00001512:svg_118",
+     "node_id": "svg_118",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      425,
+      226,
+      448,
+      258
+     ],
+     "visible_bbox_area": 736,
+     "gt_annotation_id": "3058:part33"
+    },
+    {
+     "sample_key": "ADE_val_00001512:svg_121",
+     "node_id": "svg_121",
+     "label": "sofa's seat base",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      648,
+      307,
+      662,
+      334
+     ],
+     "visible_bbox_area": 378,
+     "gt_annotation_id": "3057:part106"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001517",
+   "scene_dir": "ADE_val_00001517_ADE_val_00001517",
+   "image_file": "ADE_val_00001517.jpg",
+   "total_subpart_annotations": 21,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001517:svg_12",
+     "node_id": "svg_12",
+     "label": "lamp's shade",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      632,
+      224,
+      667,
+      248
+     ],
+     "visible_bbox_area": 840,
+     "gt_annotation_id": "3094:part37"
+    },
+    {
+     "sample_key": "ADE_val_00001517:svg_16",
+     "node_id": "svg_16",
+     "label": "lamp's base",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      639,
+      290,
+      651,
+      297
+     ],
+     "visible_bbox_area": 84,
+     "gt_annotation_id": "3094:part31"
+    },
+    {
+     "sample_key": "ADE_val_00001517:svg_70",
+     "node_id": "svg_70",
+     "label": "armchair's seat cushion",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      323,
+      302,
+      363,
+      325
+     ],
+     "visible_bbox_area": 920,
+     "gt_annotation_id": "3091:part83"
+    },
+    {
+     "sample_key": "ADE_val_00001517:svg_71",
+     "node_id": "svg_71",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      587,
+      284,
+      610,
+      332
+     ],
+     "visible_bbox_area": 1104,
+     "gt_annotation_id": "3089:part102"
+    },
+    {
+     "sample_key": "ADE_val_00001517:svg_77",
+     "node_id": "svg_77",
+     "label": "lamp's cord",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      509,
+      144,
+      516,
+      170
+     ],
+     "visible_bbox_area": 182,
+     "gt_annotation_id": "3096:part34"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001521",
+   "scene_dir": "ADE_val_00001521_ADE_val_00001521",
+   "image_file": "ADE_val_00001521.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001521:svg_71",
+     "node_id": "svg_71",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      43,
+      248,
+      143,
+      304
+     ],
+     "visible_bbox_area": 5600,
+     "gt_annotation_id": "3123:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001521:svg_72",
+     "node_id": "svg_72",
+     "label": "sofa's seat base",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      110,
+      313,
+      195,
+      361
+     ],
+     "visible_bbox_area": 4080,
+     "gt_annotation_id": "3123:part106"
+    },
+    {
+     "sample_key": "ADE_val_00001521:svg_73",
+     "node_id": "svg_73",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      137,
+      270,
+      203,
+      337
+     ],
+     "visible_bbox_area": 4422,
+     "gt_annotation_id": "3123:part102"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001527",
+   "scene_dir": "ADE_val_00001527_ADE_val_00001527",
+   "image_file": "ADE_val_00001527.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001527:svg_38",
+     "node_id": "svg_38",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      228,
+      185,
+      611,
+      334
+     ],
+     "visible_bbox_area": 57067,
+     "gt_annotation_id": "3153:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001527:svg_39",
+     "node_id": "svg_39",
+     "label": "sofa's seat cushion",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      162,
+      279,
+      543,
+      408
+     ],
+     "visible_bbox_area": 49149,
+     "gt_annotation_id": "3153:part107"
+    },
+    {
+     "sample_key": "ADE_val_00001527:svg_43",
+     "node_id": "svg_43",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      130,
+      289,
+      153,
+      364
+     ],
+     "visible_bbox_area": 1725,
+     "gt_annotation_id": "3154:part77"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001546",
+   "scene_dir": "ADE_val_00001546_ADE_val_00001546",
+   "image_file": "ADE_val_00001546.jpg",
+   "total_subpart_annotations": 14,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001546:svg_128",
+     "node_id": "svg_128",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      180,
+      277,
+      229,
+      380
+     ],
+     "visible_bbox_area": 5047,
+     "gt_annotation_id": "3192:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001546:svg_129",
+     "node_id": "svg_129",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      656,
+      307,
+      681,
+      358
+     ],
+     "visible_bbox_area": 1275,
+     "gt_annotation_id": "3191:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001546:svg_135",
+     "node_id": "svg_135",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      165,
+      198,
+      182,
+      277
+     ],
+     "visible_bbox_area": 1343,
+     "gt_annotation_id": "3192:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001546:svg_140",
+     "node_id": "svg_140",
+     "label": "person's hand",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      167,
+      272,
+      177,
+      291
+     ],
+     "visible_bbox_area": 190,
+     "gt_annotation_id": "3192:part4"
+    },
+    {
+     "sample_key": "ADE_val_00001546:svg_20",
+     "node_id": "svg_20",
+     "label": "person's foot",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      107,
+      394,
+      127,
+      415
+     ],
+     "visible_bbox_area": 420,
+     "gt_annotation_id": "3193:part2"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001547",
+   "scene_dir": "ADE_val_00001547_ADE_val_00001547",
+   "image_file": "ADE_val_00001547.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001547:svg_80",
+     "node_id": "svg_80",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      41,
+      198,
+      110,
+      259
+     ],
+     "visible_bbox_area": 4209,
+     "gt_annotation_id": "3195:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001574",
+   "scene_dir": "ADE_val_00001574_ADE_val_00001574",
+   "image_file": "ADE_val_00001574.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001579",
+   "scene_dir": "ADE_val_00001579_ADE_val_00001579",
+   "image_file": "ADE_val_00001579.jpg",
+   "total_subpart_annotations": 23,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001579:svg_68",
+     "node_id": "svg_68",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      428,
+      379,
+      452,
+      442
+     ],
+     "visible_bbox_area": 1512,
+     "gt_annotation_id": "3215:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001579:svg_77",
+     "node_id": "svg_77",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      380,
+      356,
+      392,
+      383
+     ],
+     "visible_bbox_area": 324,
+     "gt_annotation_id": "3218:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001579:svg_86",
+     "node_id": "svg_86",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      375,
+      337,
+      384,
+      369
+     ],
+     "visible_bbox_area": 288,
+     "gt_annotation_id": "3218:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001579:svg_88",
+     "node_id": "svg_88",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      652,
+      364,
+      663,
+      375
+     ],
+     "visible_bbox_area": 121,
+     "gt_annotation_id": "3220:part5"
+    },
+    {
+     "sample_key": "ADE_val_00001579:svg_91",
+     "node_id": "svg_91",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      420,
+      337,
+      427,
+      348
+     ],
+     "visible_bbox_area": 77,
+     "gt_annotation_id": "3217:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001590",
+   "scene_dir": "ADE_val_00001590_ADE_val_00001590",
+   "image_file": "ADE_val_00001590.jpg",
+   "total_subpart_annotations": 10,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001590:svg_156",
+     "node_id": "svg_156",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      166,
+      571,
+      189,
+      627
+     ],
+     "visible_bbox_area": 1288,
+     "gt_annotation_id": "3229:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001590:svg_158",
+     "node_id": "svg_158",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_26",
+     "bbox_xyxy": [
+      455,
+      551,
+      470,
+      601
+     ],
+     "visible_bbox_area": 750,
+     "gt_annotation_id": "3231:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001590:svg_160",
+     "node_id": "svg_160",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_27",
+     "bbox_xyxy": [
+      167,
+      556,
+      183,
+      586
+     ],
+     "visible_bbox_area": 480,
+     "gt_annotation_id": "3229:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001590:svg_161",
+     "node_id": "svg_161",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_26",
+     "bbox_xyxy": [
+      429,
+      526,
+      446,
+      548
+     ],
+     "visible_bbox_area": 374,
+     "gt_annotation_id": "3231:part5"
+    },
+    {
+     "sample_key": "ADE_val_00001590:svg_163",
+     "node_id": "svg_163",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_28",
+     "bbox_xyxy": [
+      132,
+      550,
+      139,
+      576
+     ],
+     "visible_bbox_area": 182,
+     "gt_annotation_id": "3230:part0"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001646",
+   "scene_dir": "ADE_val_00001646_ADE_val_00001646",
+   "image_file": "ADE_val_00001646.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001646:svg_67",
+     "node_id": "svg_67",
+     "label": "swivel chair's base",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      39,
+      204,
+      110,
+      250
+     ],
+     "visible_bbox_area": 3266,
+     "gt_annotation_id": "3259:part92"
+    },
+    {
+     "sample_key": "ADE_val_00001646:svg_70",
+     "node_id": "svg_70",
+     "label": "desk's drawer",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      0,
+      166,
+      36,
+      196
+     ],
+     "visible_bbox_area": 1080,
+     "gt_annotation_id": "3260:part115"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001677",
+   "scene_dir": "ADE_val_00001677_ADE_val_00001677",
+   "image_file": "ADE_val_00001677.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001699",
+   "scene_dir": "ADE_val_00001699_ADE_val_00001699",
+   "image_file": "ADE_val_00001699.jpg",
+   "total_subpart_annotations": 28,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001699:svg_72",
+     "node_id": "svg_72",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      191,
+      195,
+      460,
+      231
+     ],
+     "visible_bbox_area": 9684,
+     "gt_annotation_id": "3299:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001699:svg_79",
+     "node_id": "svg_79",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      495,
+      413,
+      660,
+      496
+     ],
+     "visible_bbox_area": 13695,
+     "gt_annotation_id": "3292:part77"
+    },
+    {
+     "sample_key": "ADE_val_00001699:svg_88",
+     "node_id": "svg_88",
+     "label": "coffee table's leg",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      403,
+      336,
+      427,
+      417
+     ],
+     "visible_bbox_area": 1944,
+     "gt_annotation_id": "3297:part98"
+    },
+    {
+     "sample_key": "ADE_val_00001699:svg_92",
+     "node_id": "svg_92",
+     "label": "armchair's apron",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      119,
+      290,
+      209,
+      310
+     ],
+     "visible_bbox_area": 1800,
+     "gt_annotation_id": "3295:part76"
+    },
+    {
+     "sample_key": "ADE_val_00001699:svg_97",
+     "node_id": "svg_97",
+     "label": "sofa's leg",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      568,
+      355,
+      578,
+      387
+     ],
+     "visible_bbox_area": 320,
+     "gt_annotation_id": "3293:part105"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001712",
+   "scene_dir": "ADE_val_00001712_ADE_val_00001712",
+   "image_file": "ADE_val_00001712.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001712:svg_67",
+     "node_id": "svg_67",
+     "label": "pool table's bed",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      178,
+      105,
+      320,
+      171
+     ],
+     "visible_bbox_area": 9372,
+     "gt_annotation_id": "3312:part186"
+    },
+    {
+     "sample_key": "ADE_val_00001712:svg_70",
+     "node_id": "svg_70",
+     "label": "pool table's leg",
+     "level": "part",
+     "parent_id": "svg_13",
+     "bbox_xyxy": [
+      64,
+      95,
+      89,
+      139
+     ],
+     "visible_bbox_area": 1100,
+     "gt_annotation_id": "3313:part187"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001715",
+   "scene_dir": "ADE_val_00001715_ADE_val_00001715",
+   "image_file": "ADE_val_00001715.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001715:svg_91",
+     "node_id": "svg_91",
+     "label": "television receiver's screen",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      430,
+      150,
+      463,
+      177
+     ],
+     "visible_bbox_area": 891,
+     "gt_annotation_id": "3323:part180"
+    },
+    {
+     "sample_key": "ADE_val_00001715:svg_92",
+     "node_id": "svg_92",
+     "label": "door's door frame",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      320,
+      177,
+      413,
+      184
+     ],
+     "visible_bbox_area": 651,
+     "gt_annotation_id": "3324:part9"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001716",
+   "scene_dir": "ADE_val_00001716_ADE_val_00001716",
+   "image_file": "ADE_val_00001716.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001716:svg_83",
+     "node_id": "svg_83",
+     "label": "chair's arm",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      404,
+      304,
+      449,
+      417
+     ],
+     "visible_bbox_area": 5085,
+     "gt_annotation_id": "3335:part45"
+    },
+    {
+     "sample_key": "ADE_val_00001716:svg_89",
+     "node_id": "svg_89",
+     "label": "sconce's shade",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      592,
+      97,
+      620,
+      142
+     ],
+     "visible_bbox_area": 1260,
+     "gt_annotation_id": "3331:part43"
+    },
+    {
+     "sample_key": "ADE_val_00001716:svg_90",
+     "node_id": "svg_90",
+     "label": "sconce's backplate",
+     "level": "part",
+     "parent_id": "svg_24",
+     "bbox_xyxy": [
+      618,
+      121,
+      634,
+      141
+     ],
+     "visible_bbox_area": 320,
+     "gt_annotation_id": "3331:part40"
+    },
+    {
+     "sample_key": "ADE_val_00001716:svg_91",
+     "node_id": "svg_91",
+     "label": "light's light source",
+     "level": "part",
+     "parent_id": "svg_25",
+     "bbox_xyxy": [
+      325,
+      8,
+      358,
+      20
+     ],
+     "visible_bbox_area": 396,
+     "gt_annotation_id": "3328:part232"
+    },
+    {
+     "sample_key": "ADE_val_00001716:svg_92",
+     "node_id": "svg_92",
+     "label": "light's light source",
+     "level": "part",
+     "parent_id": "svg_26",
+     "bbox_xyxy": [
+      157,
+      24,
+      188,
+      33
+     ],
+     "visible_bbox_area": 279,
+     "gt_annotation_id": "3327:part232"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001729",
+   "scene_dir": "ADE_val_00001729_ADE_val_00001729",
+   "image_file": "ADE_val_00001729.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001729:svg_24",
+     "node_id": "svg_24",
+     "label": "sink's faucet",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      301,
+      270,
+      316,
+      287
+     ],
+     "visible_bbox_area": 255,
+     "gt_annotation_id": "3374:part26"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001743",
+   "scene_dir": "ADE_val_00001743_ADE_val_00001743",
+   "image_file": "ADE_val_00001743.jpg",
+   "total_subpart_annotations": 15,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001743:svg_79",
+     "node_id": "svg_79",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      204,
+      417,
+      249,
+      472
+     ],
+     "visible_bbox_area": 2475,
+     "gt_annotation_id": "3383:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001743:svg_80",
+     "node_id": "svg_80",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      205,
+      319,
+      248,
+      373
+     ],
+     "visible_bbox_area": 2322,
+     "gt_annotation_id": "3386:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001743:svg_85",
+     "node_id": "svg_85",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      248,
+      626,
+      279,
+      656
+     ],
+     "visible_bbox_area": 930,
+     "gt_annotation_id": "3387:part133"
+    },
+    {
+     "sample_key": "ADE_val_00001743:svg_89",
+     "node_id": "svg_89",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      269,
+      338,
+      297,
+      355
+     ],
+     "visible_bbox_area": 476,
+     "gt_annotation_id": "3386:part127"
+    },
+    {
+     "sample_key": "ADE_val_00001743:svg_90",
+     "node_id": "svg_90",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      293,
+      670,
+      312,
+      685
+     ],
+     "visible_bbox_area": 285,
+     "gt_annotation_id": "3387:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001781",
+   "scene_dir": "ADE_val_00001781_ADE_val_00001781",
+   "image_file": "ADE_val_00001781.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001785",
+   "scene_dir": "ADE_val_00001785_ADE_val_00001785",
+   "image_file": "ADE_val_00001785.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001785:svg_100",
+     "node_id": "svg_100",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      394,
+      465,
+      411,
+      477
+     ],
+     "visible_bbox_area": 204,
+     "gt_annotation_id": "3408:part127"
+    },
+    {
+     "sample_key": "ADE_val_00001785:svg_101",
+     "node_id": "svg_101",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      67,
+      465,
+      78,
+      476
+     ],
+     "visible_bbox_area": 121,
+     "gt_annotation_id": "3407:part127"
+    },
+    {
+     "sample_key": "ADE_val_00001785:svg_96",
+     "node_id": "svg_96",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      123,
+      424,
+      220,
+      491
+     ],
+     "visible_bbox_area": 6499,
+     "gt_annotation_id": "3407:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001785:svg_97",
+     "node_id": "svg_97",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      425,
+      473,
+      471,
+      512
+     ],
+     "visible_bbox_area": 1794,
+     "gt_annotation_id": "3408:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001792",
+   "scene_dir": "ADE_val_00001792_ADE_val_00001792",
+   "image_file": "ADE_val_00001792.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001792:svg_52",
+     "node_id": "svg_52",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      625,
+      310,
+      677,
+      355
+     ],
+     "visible_bbox_area": 2340,
+     "gt_annotation_id": "3440:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001792:svg_53",
+     "node_id": "svg_53",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      169,
+      305,
+      199,
+      329
+     ],
+     "visible_bbox_area": 720,
+     "gt_annotation_id": "3442:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001792:svg_55",
+     "node_id": "svg_55",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      220,
+      313,
+      246,
+      335
+     ],
+     "visible_bbox_area": 572,
+     "gt_annotation_id": "3441:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001792:svg_59",
+     "node_id": "svg_59",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      161,
+      323,
+      170,
+      338
+     ],
+     "visible_bbox_area": 135,
+     "gt_annotation_id": "3442:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001804",
+   "scene_dir": "ADE_val_00001804_ADE_val_00001804",
+   "image_file": "ADE_val_00001804.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001804:svg_107",
+     "node_id": "svg_107",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      614,
+      380,
+      682,
+      399
+     ],
+     "visible_bbox_area": 1292,
+     "gt_annotation_id": "3467:part133"
+    },
+    {
+     "sample_key": "ADE_val_00001804:svg_111",
+     "node_id": "svg_111",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      609,
+      438,
+      630,
+      449
+     ],
+     "visible_bbox_area": 231,
+     "gt_annotation_id": "3467:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001804:svg_112",
+     "node_id": "svg_112",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      534,
+      407,
+      560,
+      415
+     ],
+     "visible_bbox_area": 208,
+     "gt_annotation_id": "3466:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001807",
+   "scene_dir": "ADE_val_00001807_ADE_val_00001807",
+   "image_file": "ADE_val_00001807.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001807:svg_206",
+     "node_id": "svg_206",
+     "label": "car's mirror",
+     "level": "part",
+     "parent_id": "svg_95",
+     "bbox_xyxy": [
+      212,
+      327,
+      234,
+      338
+     ],
+     "visible_bbox_area": 242,
+     "gt_annotation_id": "3476:part131"
+    },
+    {
+     "sample_key": "ADE_val_00001807:svg_95",
+     "node_id": "svg_95",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      112,
+      305,
+      239,
+      383
+     ],
+     "visible_bbox_area": 9906,
+     "gt_annotation_id": "3476:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001807:svg_96",
+     "node_id": "svg_96",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      247,
+      360,
+      283,
+      399
+     ],
+     "visible_bbox_area": 1404,
+     "gt_annotation_id": "3476:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001812",
+   "scene_dir": "ADE_val_00001812_ADE_val_00001812",
+   "image_file": "ADE_val_00001812.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001812:svg_58",
+     "node_id": "svg_58",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      657,
+      377,
+      683,
+      410
+     ],
+     "visible_bbox_area": 858,
+     "gt_annotation_id": "3480:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001812:svg_60",
+     "node_id": "svg_60",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      340,
+      345,
+      357,
+      378
+     ],
+     "visible_bbox_area": 561,
+     "gt_annotation_id": "3479:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001812:svg_63",
+     "node_id": "svg_63",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_19",
+     "bbox_xyxy": [
+      638,
+      370,
+      653,
+      383
+     ],
+     "visible_bbox_area": 195,
+     "gt_annotation_id": "3480:part127"
+    },
+    {
+     "sample_key": "ADE_val_00001812:svg_64",
+     "node_id": "svg_64",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      302,
+      365,
+      322,
+      373
+     ],
+     "visible_bbox_area": 160,
+     "gt_annotation_id": "3479:part129"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001816",
+   "scene_dir": "ADE_val_00001816_ADE_val_00001816",
+   "image_file": "ADE_val_00001816.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001816:svg_62",
+     "node_id": "svg_62",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      40,
+      616,
+      72,
+      626
+     ],
+     "visible_bbox_area": 320,
+     "gt_annotation_id": "3482:part133"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001818",
+   "scene_dir": "ADE_val_00001818_ADE_val_00001818",
+   "image_file": "ADE_val_00001818.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001818:svg_115",
+     "node_id": "svg_115",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      3,
+      327,
+      22,
+      361
+     ],
+     "visible_bbox_area": 646,
+     "gt_annotation_id": "3488:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001818:svg_116",
+     "node_id": "svg_116",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      100,
+      327,
+      133,
+      355
+     ],
+     "visible_bbox_area": 924,
+     "gt_annotation_id": "3491:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001818:svg_119",
+     "node_id": "svg_119",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      2,
+      305,
+      20,
+      333
+     ],
+     "visible_bbox_area": 504,
+     "gt_annotation_id": "3488:part8"
+    },
+    {
+     "sample_key": "ADE_val_00001818:svg_122",
+     "node_id": "svg_122",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      610,
+      303,
+      647,
+      313
+     ],
+     "visible_bbox_area": 370,
+     "gt_annotation_id": "3484:part133"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001822",
+   "scene_dir": "ADE_val_00001822_ADE_val_00001822",
+   "image_file": "ADE_val_00001822.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001822:svg_107",
+     "node_id": "svg_107",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      108,
+      269,
+      207,
+      433
+     ],
+     "visible_bbox_area": 16236,
+     "gt_annotation_id": "3494:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001822:svg_109",
+     "node_id": "svg_109",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_6",
+     "bbox_xyxy": [
+      152,
+      252,
+      201,
+      323
+     ],
+     "visible_bbox_area": 3479,
+     "gt_annotation_id": "3494:part0"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001825",
+   "scene_dir": "ADE_val_00001825_ADE_val_00001825",
+   "image_file": "ADE_val_00001825.jpg",
+   "total_subpart_annotations": 18,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001825:svg_124",
+     "node_id": "svg_124",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      406,
+      320,
+      423,
+      355
+     ],
+     "visible_bbox_area": 595,
+     "gt_annotation_id": "3502:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001825:svg_133",
+     "node_id": "svg_133",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_7",
+     "bbox_xyxy": [
+      449,
+      292,
+      463,
+      311
+     ],
+     "visible_bbox_area": 266,
+     "gt_annotation_id": "3511:part8"
+    },
+    {
+     "sample_key": "ADE_val_00001825:svg_136",
+     "node_id": "svg_136",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      124,
+      313,
+      146,
+      343
+     ],
+     "visible_bbox_area": 660,
+     "gt_annotation_id": "3512:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001825:svg_137",
+     "node_id": "svg_137",
+     "label": "person's back",
+     "level": "part",
+     "parent_id": "svg_11",
+     "bbox_xyxy": [
+      276,
+      295,
+      288,
+      312
+     ],
+     "visible_bbox_area": 204,
+     "gt_annotation_id": "3510:part1"
+    },
+    {
+     "sample_key": "ADE_val_00001825:svg_140",
+     "node_id": "svg_140",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      346,
+      312,
+      361,
+      326
+     ],
+     "visible_bbox_area": 210,
+     "gt_annotation_id": "3506:part8"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001826",
+   "scene_dir": "ADE_val_00001826_ADE_val_00001826",
+   "image_file": "ADE_val_00001826.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001826:svg_99",
+     "node_id": "svg_99",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      219,
+      270,
+      249,
+      300
+     ],
+     "visible_bbox_area": 900,
+     "gt_annotation_id": "3515:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001831",
+   "scene_dir": "ADE_val_00001831_ADE_val_00001831",
+   "image_file": "ADE_val_00001831.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001831:svg_66",
+     "node_id": "svg_66",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_26",
+     "bbox_xyxy": [
+      6,
+      273,
+      39,
+      322
+     ],
+     "visible_bbox_area": 1617,
+     "gt_annotation_id": "3528:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001831:svg_69",
+     "node_id": "svg_69",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_25",
+     "bbox_xyxy": [
+      298,
+      308,
+      326,
+      331
+     ],
+     "visible_bbox_area": 644,
+     "gt_annotation_id": "3527:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001839",
+   "scene_dir": "ADE_val_00001839_ADE_val_00001839",
+   "image_file": "ADE_val_00001839.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001839:svg_105",
+     "node_id": "svg_105",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      41,
+      314,
+      91,
+      346
+     ],
+     "visible_bbox_area": 1600,
+     "gt_annotation_id": "3566:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001839:svg_107",
+     "node_id": "svg_107",
+     "label": "car's bumper",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      92,
+      335,
+      131,
+      350
+     ],
+     "visible_bbox_area": 585,
+     "gt_annotation_id": "3566:part125"
+    },
+    {
+     "sample_key": "ADE_val_00001839:svg_108",
+     "node_id": "svg_108",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      360,
+      344,
+      381,
+      363
+     ],
+     "visible_bbox_area": 399,
+     "gt_annotation_id": "3565:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001839:svg_109",
+     "node_id": "svg_109",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      78,
+      340,
+      96,
+      359
+     ],
+     "visible_bbox_area": 342,
+     "gt_annotation_id": "3566:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001844",
+   "scene_dir": "ADE_val_00001844_ADE_val_00001844",
+   "image_file": "ADE_val_00001844.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001844:svg_63",
+     "node_id": "svg_63",
+     "label": "car's door",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      326,
+      334,
+      395,
+      415
+     ],
+     "visible_bbox_area": 5589,
+     "gt_annotation_id": "3584:part126"
+    },
+    {
+     "sample_key": "ADE_val_00001844:svg_65",
+     "node_id": "svg_65",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      314,
+      395,
+      342,
+      443
+     ],
+     "visible_bbox_area": 1344,
+     "gt_annotation_id": "3584:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001844:svg_67",
+     "node_id": "svg_67",
+     "label": "car's window",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      385,
+      331,
+      435,
+      347
+     ],
+     "visible_bbox_area": 800,
+     "gt_annotation_id": "3582:part133"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001846",
+   "scene_dir": "ADE_val_00001846_ADE_val_00001846",
+   "image_file": "ADE_val_00001846.jpg",
+   "total_subpart_annotations": 9,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001846:svg_114",
+     "node_id": "svg_114",
+     "label": "person's leg",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      209,
+      328,
+      254,
+      439
+     ],
+     "visible_bbox_area": 4995,
+     "gt_annotation_id": "3586:part6"
+    },
+    {
+     "sample_key": "ADE_val_00001846:svg_117",
+     "node_id": "svg_117",
+     "label": "person's torso",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      207,
+      244,
+      252,
+      331
+     ],
+     "visible_bbox_area": 3915,
+     "gt_annotation_id": "3586:part8"
+    },
+    {
+     "sample_key": "ADE_val_00001846:svg_118",
+     "node_id": "svg_118",
+     "label": "person's arm",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      207,
+      257,
+      232,
+      346
+     ],
+     "visible_bbox_area": 2225,
+     "gt_annotation_id": "3586:part0"
+    },
+    {
+     "sample_key": "ADE_val_00001846:svg_122",
+     "node_id": "svg_122",
+     "label": "person's back",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      206,
+      299,
+      218,
+      330
+     ],
+     "visible_bbox_area": 372,
+     "gt_annotation_id": "3586:part1"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001847",
+   "scene_dir": "ADE_val_00001847_ADE_val_00001847",
+   "image_file": "ADE_val_00001847.jpg",
+   "total_subpart_annotations": 4,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001847:svg_88",
+     "node_id": "svg_88",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      192,
+      383,
+      281,
+      470
+     ],
+     "visible_bbox_area": 7743,
+     "gt_annotation_id": "3587:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001847:svg_90",
+     "node_id": "svg_90",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      638,
+      363,
+      672,
+      382
+     ],
+     "visible_bbox_area": 646,
+     "gt_annotation_id": "3587:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001860",
+   "scene_dir": "ADE_val_00001860_ADE_val_00001860",
+   "image_file": "ADE_val_00001860.jpg",
+   "total_subpart_annotations": 2,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001860:svg_89",
+     "node_id": "svg_89",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      106,
+      207,
+      123,
+      239
+     ],
+     "visible_bbox_area": 544,
+     "gt_annotation_id": "3615:part132"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001867",
+   "scene_dir": "ADE_val_00001867_ADE_val_00001867",
+   "image_file": "ADE_val_00001867.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001867:svg_89",
+     "node_id": "svg_89",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      7,
+      179,
+      28,
+      186
+     ],
+     "visible_bbox_area": 147,
+     "gt_annotation_id": "3620:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001869",
+   "scene_dir": "ADE_val_00001869_ADE_val_00001869",
+   "image_file": "ADE_val_00001869.jpg",
+   "total_subpart_annotations": 11,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001869:svg_56",
+     "node_id": "svg_56",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      144,
+      202,
+      155,
+      222
+     ],
+     "visible_bbox_area": 220,
+     "gt_annotation_id": "3623:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001869:svg_59",
+     "node_id": "svg_59",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      189,
+      188,
+      204,
+      200
+     ],
+     "visible_bbox_area": 180,
+     "gt_annotation_id": "3622:part127"
+    },
+    {
+     "sample_key": "ADE_val_00001869:svg_60",
+     "node_id": "svg_60",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      210,
+      201,
+      226,
+      211
+     ],
+     "visible_bbox_area": 160,
+     "gt_annotation_id": "3622:part129"
+    },
+    {
+     "sample_key": "ADE_val_00001869:svg_61",
+     "node_id": "svg_61",
+     "label": "car's license plate",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      105,
+      207,
+      122,
+      214
+     ],
+     "visible_bbox_area": 119,
+     "gt_annotation_id": "3623:part129"
+    },
+    {
+     "sample_key": "ADE_val_00001869:svg_65",
+     "node_id": "svg_65",
+     "label": "van's taillight",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      69,
+      174,
+      81,
+      195
+     ],
+     "visible_bbox_area": 252,
+     "gt_annotation_id": "3621:part195"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001875",
+   "scene_dir": "ADE_val_00001875_ADE_val_00001875",
+   "image_file": "ADE_val_00001875.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001875:svg_57",
+     "node_id": "svg_57",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      69,
+      225,
+      153,
+      306
+     ],
+     "visible_bbox_area": 6804,
+     "gt_annotation_id": "3628:part5"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001888",
+   "scene_dir": "ADE_val_00001888_ADE_val_00001888",
+   "image_file": "ADE_val_00001888.jpg",
+   "total_subpart_annotations": 1,
+   "masked_subparts": []
+  },
+  {
+   "image_id": "ADE_val_00001898",
+   "scene_dir": "ADE_val_00001898_ADE_val_00001898",
+   "image_file": "ADE_val_00001898.jpg",
+   "total_subpart_annotations": 3,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001898:svg_38",
+     "node_id": "svg_38",
+     "label": "cabinet's drawer",
+     "level": "part",
+     "parent_id": "svg_5",
+     "bbox_xyxy": [
+      126,
+      280,
+      199,
+      323
+     ],
+     "visible_bbox_area": 3139,
+     "gt_annotation_id": "3644:part19"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001908",
+   "scene_dir": "ADE_val_00001908_ADE_val_00001908",
+   "image_file": "ADE_val_00001908.jpg",
+   "total_subpart_annotations": 12,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001908:svg_69",
+     "node_id": "svg_69",
+     "label": "sofa's back",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      77,
+      123,
+      127,
+      152
+     ],
+     "visible_bbox_area": 1450,
+     "gt_annotation_id": "3655:part103"
+    },
+    {
+     "sample_key": "ADE_val_00001908:svg_70",
+     "node_id": "svg_70",
+     "label": "armchair's back",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      31,
+      130,
+      78,
+      154
+     ],
+     "visible_bbox_area": 1128,
+     "gt_annotation_id": "3656:part78"
+    },
+    {
+     "sample_key": "ADE_val_00001908:svg_73",
+     "node_id": "svg_73",
+     "label": "armchair's seat",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      144,
+      143,
+      173,
+      155
+     ],
+     "visible_bbox_area": 348,
+     "gt_annotation_id": "3657:part81"
+    },
+    {
+     "sample_key": "ADE_val_00001908:svg_75",
+     "node_id": "svg_75",
+     "label": "armchair's arm",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      152,
+      130,
+      174,
+      141
+     ],
+     "visible_bbox_area": 242,
+     "gt_annotation_id": "3657:part77"
+    },
+    {
+     "sample_key": "ADE_val_00001908:svg_80",
+     "node_id": "svg_80",
+     "label": "armchair's leg",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      170,
+      144,
+      176,
+      172
+     ],
+     "visible_bbox_area": 168,
+     "gt_annotation_id": "3657:part80"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001909",
+   "scene_dir": "ADE_val_00001909_ADE_val_00001909",
+   "image_file": "ADE_val_00001909.jpg",
+   "total_subpart_annotations": 12,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001909:svg_66",
+     "node_id": "svg_66",
+     "label": "sofa's back pillow",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      33,
+      87,
+      275,
+      236
+     ],
+     "visible_bbox_area": 36058,
+     "gt_annotation_id": "3659:part104"
+    },
+    {
+     "sample_key": "ADE_val_00001909:svg_68",
+     "node_id": "svg_68",
+     "label": "sofa's seat cushion",
+     "level": "part",
+     "parent_id": "svg_8",
+     "bbox_xyxy": [
+      171,
+      196,
+      368,
+      317
+     ],
+     "visible_bbox_area": 23837,
+     "gt_annotation_id": "3659:part107"
+    },
+    {
+     "sample_key": "ADE_val_00001909:svg_70",
+     "node_id": "svg_70",
+     "label": "armchair's seat",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      252,
+      466,
+      452,
+      512
+     ],
+     "visible_bbox_area": 9200,
+     "gt_annotation_id": "3662:part81"
+    },
+    {
+     "sample_key": "ADE_val_00001909:svg_73",
+     "node_id": "svg_73",
+     "label": "television receiver's screen",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      531,
+      165,
+      564,
+      230
+     ],
+     "visible_bbox_area": 2145,
+     "gt_annotation_id": "3661:part180"
+    },
+    {
+     "sample_key": "ADE_val_00001909:svg_77",
+     "node_id": "svg_77",
+     "label": "armchair's leg",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      281,
+      471,
+      322,
+      476
+     ],
+     "visible_bbox_area": 205,
+     "gt_annotation_id": "3662:part80"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001928",
+   "scene_dir": "ADE_val_00001928_ADE_val_00001928",
+   "image_file": "ADE_val_00001928.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001928:svg_61",
+     "node_id": "svg_61",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      45,
+      7,
+      114,
+      93
+     ],
+     "visible_bbox_area": 5934,
+     "gt_annotation_id": "3673:part5"
+    },
+    {
+     "sample_key": "ADE_val_00001928:svg_64",
+     "node_id": "svg_64",
+     "label": "person's head",
+     "level": "part",
+     "parent_id": "svg_18",
+     "bbox_xyxy": [
+      131,
+      65,
+      172,
+      123
+     ],
+     "visible_bbox_area": 2378,
+     "gt_annotation_id": "3674:part5"
+    },
+    {
+     "sample_key": "ADE_val_00001928:svg_66",
+     "node_id": "svg_66",
+     "label": "person's neck",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      45,
+      75,
+      55,
+      94
+     ],
+     "visible_bbox_area": 190,
+     "gt_annotation_id": "3673:part7"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001935",
+   "scene_dir": "ADE_val_00001935_ADE_val_00001935",
+   "image_file": "ADE_val_00001935.jpg",
+   "total_subpart_annotations": 8,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001935:svg_54",
+     "node_id": "svg_54",
+     "label": "airplane's stabilizer",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      50,
+      103,
+      115,
+      160
+     ],
+     "visible_bbox_area": 3705,
+     "gt_annotation_id": "3677:part203"
+    },
+    {
+     "sample_key": "ADE_val_00001935:svg_56",
+     "node_id": "svg_56",
+     "label": "airplane's turbine engine",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      298,
+      229,
+      347,
+      252
+     ],
+     "visible_bbox_area": 1127,
+     "gt_annotation_id": "3677:part204"
+    },
+    {
+     "sample_key": "ADE_val_00001935:svg_57",
+     "node_id": "svg_57",
+     "label": "car's wheel",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      399,
+      447,
+      422,
+      481
+     ],
+     "visible_bbox_area": 782,
+     "gt_annotation_id": "3676:part132"
+    },
+    {
+     "sample_key": "ADE_val_00001935:svg_61",
+     "node_id": "svg_61",
+     "label": "car's headlight",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      344,
+      458,
+      358,
+      468
+     ],
+     "visible_bbox_area": 140,
+     "gt_annotation_id": "3676:part127"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001939",
+   "scene_dir": "ADE_val_00001939_ADE_val_00001939",
+   "image_file": "ADE_val_00001939.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001939:svg_11",
+     "node_id": "svg_11",
+     "label": "bed's headboard",
+     "level": "part",
+     "parent_id": null,
+     "bbox_xyxy": [
+      23,
+      92,
+      83,
+      269
+     ],
+     "visible_bbox_area": 10620,
+     "gt_annotation_id": "3679:part67"
+    },
+    {
+     "sample_key": "ADE_val_00001939:svg_56",
+     "node_id": "svg_56",
+     "label": "lamp's column",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      58,
+      300,
+      109,
+      381
+     ],
+     "visible_bbox_area": 4131,
+     "gt_annotation_id": "3680:part33"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001943",
+   "scene_dir": "ADE_val_00001943_ADE_val_00001943",
+   "image_file": "ADE_val_00001943.jpg",
+   "total_subpart_annotations": 17,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001943:svg_136",
+     "node_id": "svg_136",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      75,
+      394,
+      88,
+      512
+     ],
+     "visible_bbox_area": 1534,
+     "gt_annotation_id": "3695:part72"
+    },
+    {
+     "sample_key": "ADE_val_00001943:svg_138",
+     "node_id": "svg_138",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      448,
+      400,
+      467,
+      498
+     ],
+     "visible_bbox_area": 1862,
+     "gt_annotation_id": "3692:part72"
+    },
+    {
+     "sample_key": "ADE_val_00001943:svg_141",
+     "node_id": "svg_141",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      42,
+      315,
+      51,
+      416
+     ],
+     "visible_bbox_area": 909,
+     "gt_annotation_id": "3694:part72"
+    },
+    {
+     "sample_key": "ADE_val_00001943:svg_142",
+     "node_id": "svg_142",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      269,
+      322,
+      282,
+      398
+     ],
+     "visible_bbox_area": 988,
+     "gt_annotation_id": "3690:part72"
+    },
+    {
+     "sample_key": "ADE_val_00001943:svg_143",
+     "node_id": "svg_143",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_15",
+     "bbox_xyxy": [
+      29,
+      297,
+      39,
+      384
+     ],
+     "visible_bbox_area": 870,
+     "gt_annotation_id": "3699:part72"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001961",
+   "scene_dir": "ADE_val_00001961_ADE_val_00001961",
+   "image_file": "ADE_val_00001961.jpg",
+   "total_subpart_annotations": 7,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001961:svg_111",
+     "node_id": "svg_111",
+     "label": "table's top",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      376,
+      365,
+      491,
+      407
+     ],
+     "visible_bbox_area": 4830,
+     "gt_annotation_id": "3742:part74"
+    },
+    {
+     "sample_key": "ADE_val_00001961:svg_113",
+     "node_id": "svg_113",
+     "label": "table's leg",
+     "level": "part",
+     "parent_id": "svg_1",
+     "bbox_xyxy": [
+      411,
+      444,
+      425,
+      512
+     ],
+     "visible_bbox_area": 952,
+     "gt_annotation_id": "3742:part72"
+    },
+    {
+     "sample_key": "ADE_val_00001961:svg_115",
+     "node_id": "svg_115",
+     "label": "chair's leg",
+     "level": "part",
+     "parent_id": "svg_3",
+     "bbox_xyxy": [
+      519,
+      454,
+      530,
+      498
+     ],
+     "visible_bbox_area": 484,
+     "gt_annotation_id": "3743:part48"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001962",
+   "scene_dir": "ADE_val_00001962_ADE_val_00001962",
+   "image_file": "ADE_val_00001962.jpg",
+   "total_subpart_annotations": 6,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001962:svg_89",
+     "node_id": "svg_89",
+     "label": "cooking stove's oven",
+     "level": "part",
+     "parent_id": "svg_14",
+     "bbox_xyxy": [
+      502,
+      258,
+      683,
+      414
+     ],
+     "visible_bbox_area": 28236,
+     "gt_annotation_id": "3750:part152"
+    },
+    {
+     "sample_key": "ADE_val_00001962:svg_91",
+     "node_id": "svg_91",
+     "label": "cabinet's door",
+     "level": "part",
+     "parent_id": "svg_16",
+     "bbox_xyxy": [
+      361,
+      0,
+      441,
+      124
+     ],
+     "visible_bbox_area": 9920,
+     "gt_annotation_id": "3752:part18"
+    },
+    {
+     "sample_key": "ADE_val_00001962:svg_94",
+     "node_id": "svg_94",
+     "label": "microwave's window",
+     "level": "part",
+     "parent_id": "svg_17",
+     "bbox_xyxy": [
+      529,
+      88,
+      639,
+      135
+     ],
+     "visible_bbox_area": 5170,
+     "gt_annotation_id": "3753:part159"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001965",
+   "scene_dir": "ADE_val_00001965_ADE_val_00001965",
+   "image_file": "ADE_val_00001965.jpg",
+   "total_subpart_annotations": 15,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001965:svg_73",
+     "node_id": "svg_73",
+     "label": "sofa's skirt",
+     "level": "part",
+     "parent_id": "svg_10",
+     "bbox_xyxy": [
+      554,
+      355,
+      696,
+      479
+     ],
+     "visible_bbox_area": 17608,
+     "gt_annotation_id": "3763:part108"
+    },
+    {
+     "sample_key": "ADE_val_00001965:svg_76",
+     "node_id": "svg_76",
+     "label": "sofa's back",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      67,
+      288,
+      183,
+      335
+     ],
+     "visible_bbox_area": 5452,
+     "gt_annotation_id": "3765:part103"
+    },
+    {
+     "sample_key": "ADE_val_00001965:svg_81",
+     "node_id": "svg_81",
+     "label": "sofa's seat base",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      0,
+      346,
+      204,
+      379
+     ],
+     "visible_bbox_area": 6732,
+     "gt_annotation_id": "3765:part106"
+    },
+    {
+     "sample_key": "ADE_val_00001965:svg_82",
+     "node_id": "svg_82",
+     "label": "sofa's arm",
+     "level": "part",
+     "parent_id": "svg_12",
+     "bbox_xyxy": [
+      178,
+      293,
+      206,
+      353
+     ],
+     "visible_bbox_area": 1680,
+     "gt_annotation_id": "3765:part102"
+    },
+    {
+     "sample_key": "ADE_val_00001965:svg_83",
+     "node_id": "svg_83",
+     "label": "shelf's shelf",
+     "level": "part",
+     "parent_id": "svg_9",
+     "bbox_xyxy": [
+      203,
+      159,
+      295,
+      167
+     ],
+     "visible_bbox_area": 736,
+     "gt_annotation_id": "3761:part90"
+    }
+   ]
+  },
+  {
+   "image_id": "ADE_val_00001987",
+   "scene_dir": "ADE_val_00001987_ADE_val_00001987",
+   "image_file": "ADE_val_00001987.jpg",
+   "total_subpart_annotations": 5,
+   "masked_subparts": [
+    {
+     "sample_key": "ADE_val_00001987:svg_78",
+     "node_id": "svg_78",
+     "label": "lamp's light source",
+     "level": "part",
+     "parent_id": "svg_2",
+     "bbox_xyxy": [
+      250,
+      186,
+      434,
+      265
+     ],
+     "visible_bbox_area": 14536,
+     "gt_annotation_id": "3804:part36"
+    },
+    {
+     "sample_key": "ADE_val_00001987:svg_81",
+     "node_id": "svg_81",
+     "label": "fan's blade",
+     "level": "part",
+     "parent_id": "svg_4",
+     "bbox_xyxy": [
+      402,
+      145,
+      461,
+      174
+     ],
+     "visible_bbox_area": 1711,
+     "gt_annotation_id": "3805:part95"
+    }
+   ]
+  }
+ ]
+}
