@@ -42,7 +42,7 @@ class LangSVG:
 
         cfg = load_config("configs/natural.yaml")
         model = LangSVG(cfg, device="cuda")
-        result = model.vectorize("examples/cat.jpg", "outputs/cat")
+        result = model.vectorize("path/to/image.jpg", "outputs/")
     """
 
     def __init__(self, cfg: dict, device="cuda", priors: Optional[MaskPriors] = None):

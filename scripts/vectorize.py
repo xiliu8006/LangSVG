@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Vectorize images into semantic SVG trees.
 
-    python scripts/vectorize.py --input examples/ --output outputs/ --point-budget 2304
+    python scripts/vectorize.py --input path/to/images/ --output outputs/ --point-budget 2304
 """
 import argparse
 import sys

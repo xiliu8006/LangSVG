@@ -83,7 +83,7 @@ class ObjectExtractor(LangSVG):
 
         cfg = load_config("configs/natural.yaml")
         tool = ObjectExtractor(cfg, device="cuda")
-        result = tool.extract("examples/ADE_val_00000003.jpg", "outputs/obj", point=(320, 240))
+        result = tool.extract("path/to/image.jpg", "outputs/obj", point=(320, 240))
     """
 
     def __init__(self, cfg: dict, device="cuda", priors: Optional[MaskPriors] = None):

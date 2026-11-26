@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Extract one object of an image as an SVG tree, selected by a click point or a bounding box.
 
-    python scripts/extract_object.py --input examples/ADE_val_00000003.jpg --point 420 300 --output outputs/obj
-    python scripts/extract_object.py --input examples/ADE_val_00000003.jpg --box 300 200 560 400 --output outputs/obj
+    python scripts/extract_object.py --input path/to/image.jpg --point 420 300 --output outputs/obj
+    python scripts/extract_object.py --input path/to/image.jpg --box 300 200 560 400 --output outputs/obj
 
 Several prompts of the same image: give --point / --box several times; results go to <output>/obj_<k>/.
 """
