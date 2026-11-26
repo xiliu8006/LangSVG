@@ -63,8 +63,8 @@ scene = model.vectorize("path/to/image.jpg", "path/to/outputs", point_budget=230
 
 | config | use |
 |---|---|
-| `natural.yaml` | the NeurIPS paper version (quadratic segments); use it to reproduce the paper |
-| `natural_spanfit.yaml` | cubic span-fit paths: ~12% fewer paths at similar PSNR (within ~0.2 dB) |
+| `natural.yaml` | the NeurIPS paper version; use it to reproduce the paper |
+| `natural_spanfit.yaml` | cubic span-fit paths: fewer paths at similar PSNR |
 
 ### Custom masks
 
