@@ -112,11 +112,14 @@ Results are repeatable with `seed: 0` on the same GPU; across GPUs PSNR varies b
 
 ## Citation
 
+If you find our work helpful for your research or project, please consider citing our paper:
+
 ```bibtex
-@inproceedings{langsvg2026,
-  title     = {Lang-SVG: Hierarchical Image Vectorization with Language Priors},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026}
+@article{liu2026lang,
+  title={Lang-SVG: Hierarchical Image Vectorization with Language Priors},
+  author={Liu, Xi and Zhou, Chaoyi and Wang, Run and Li, Jiaang and Luo, Feng and Huang, Junxiang and Huang, Siyu},
+  journal={arXiv preprint arXiv:2611.15941},
+  year={2026}
 }
 ```
 
