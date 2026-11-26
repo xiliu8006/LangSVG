@@ -78,15 +78,6 @@ scene = model.vectorize("path/to/image.jpg", "path/to/outputs", point_budget=230
 they are never pruned. Part masks and names are read from the dataset files next to it
 (`joint_json` / `part_dir` in the config).
 
-## Object extraction
-
-Vectorize one object, selected by a click point or a box:
-
-```bash
-python scripts/extract_object.py --input path/to/image.jpg --point X Y --output path/to/outputs
-python scripts/extract_object.py --input path/to/image.jpg --box X0 Y0 X1 Y1 --output path/to/outputs
-```
-
 ## Semantic labeling
 
 Qwen3.5 needs `transformers >= 5.2`, so it uses a separate environment. The default model
